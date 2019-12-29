@@ -904,6 +904,7 @@ Similarly, you can adjust the ``STALL`` state by setting or clearing the
 ``v2.0.1``, so this value is ``2``.</description>
                     <addressOffset>0x0000</addressOffset>
                     <resetValue>0x02</resetValue>
+                    <access>read-only</access>
                 </register>
                 <register>
                     <name>MINOR</name>
@@ -911,6 +912,7 @@ Similarly, you can adjust the ``STALL`` state by setting or clearing the
 ``v2.0.1``, so this value is ``0``.</description>
                     <addressOffset>0x0004</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-only</access>
                 </register>
                 <register>
                     <name>REVISION</name>
@@ -918,6 +920,7 @@ Similarly, you can adjust the ``STALL`` state by setting or clearing the
 ``v2.0.1``, so this value is ``1``.</description>
                     <addressOffset>0x0008</addressOffset>
                     <resetValue>0x01</resetValue>
+                    <access>read-only</access>
                 </register>
                 <register>
                     <name>GITREV3</name>
@@ -926,24 +929,28 @@ documentation was built from git rev ``00000000``, so this value is 0, which
 should be enough to check out the exact git version used to build this firmware.</description>
                     <addressOffset>0x000c</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-only</access>
                 </register>
                 <register>
                     <name>GITREV2</name>
                     <description>Bits 16-23 of `VERSION_GITREV`.</description>
                     <addressOffset>0x0010</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-only</access>
                 </register>
                 <register>
                     <name>GITREV1</name>
                     <description>Bits 8-15 of `VERSION_GITREV`.</description>
                     <addressOffset>0x0014</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-only</access>
                 </register>
                 <register>
                     <name>GITREV0</name>
                     <description>Bits 0-7 of `VERSION_GITREV`.</description>
                     <addressOffset>0x0018</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-only</access>
                 </register>
                 <register>
                     <name>GITEXTRA1</name>
@@ -953,12 +960,14 @@ from has one additional commit beyond the tag indicated in `MAJOR`, `MINOR`, and
 `REVISION`.</description>
                     <addressOffset>0x001c</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-only</access>
                 </register>
                 <register>
                     <name>GITEXTRA0</name>
                     <description>Bits 0-7 of `VERSION_GITEXTRA`.</description>
                     <addressOffset>0x0020</addressOffset>
                     <resetValue>0x01</resetValue>
+                    <access>read-only</access>
                 </register>
                 <register>
                     <name>DIRTY</name>
@@ -974,11 +983,13 @@ from has one additional commit beyond the tag indicated in `MAJOR`, `MINOR`, and
 modifications.]]></description>
                         </field>
                     </fields>
+                    <access>read-only</access>
                 </register>
                 <register>
                     <name>MODEL</name>
                     <addressOffset>0x0028</addressOffset>
                     <resetValue>0x50</resetValue>
+                    <access>read-only</access>
                     <fields>
                         <field>
                             <name>model</name>
@@ -994,24 +1005,28 @@ modifications.]]></description>
                     <description>Bits 24-31 of `VERSION_SEED`. 32-bit seed used for the place-and-route.</description>
                     <addressOffset>0x002c</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-only</access>
                 </register>
                 <register>
                     <name>SEED2</name>
                     <description>Bits 16-23 of `VERSION_SEED`.</description>
                     <addressOffset>0x0030</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-only</access>
                 </register>
                 <register>
                     <name>SEED1</name>
                     <description>Bits 8-15 of `VERSION_SEED`.</description>
                     <addressOffset>0x0034</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-only</access>
                 </register>
                 <register>
                     <name>SEED0</name>
                     <description>Bits 0-7 of `VERSION_SEED`.</description>
                     <addressOffset>0x0038</addressOffset>
                     <resetValue>0x03</resetValue>
+                    <access>read-only</access>
                 </register>
             </registers>
             <addressBlock>

@@ -32,168 +32,138 @@ pub struct RegisterBlock {
     #[doc = "0x38 - Bits 0-7 of `VERSION_SEED`."]
     pub seed0: SEED0,
 }
-#[doc = "Major git tag version. For example, this firmware was built from git tag ``v2.0.1``, so this value is ``2``.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [major](major) module"]
+#[doc = "Major git tag version. For example, this firmware was built from git tag ``v2.0.1``, so this value is ``2``.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [major](major) module"]
 pub type MAJOR = crate::Reg<u32, _MAJOR>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _MAJOR;
 #[doc = "`read()` method returns [major::R](major::R) reader structure"]
 impl crate::Readable for MAJOR {}
-#[doc = "`write(|w| ..)` method takes [major::W](major::W) writer structure"]
-impl crate::Writable for MAJOR {}
 #[doc = "Major git tag version. For example, this firmware was built from git tag ``v2.0.1``, so this value is ``2``."]
 pub mod major;
-#[doc = "Minor git tag version. For example, this firmware was built from git tag ``v2.0.1``, so this value is ``0``.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [minor](minor) module"]
+#[doc = "Minor git tag version. For example, this firmware was built from git tag ``v2.0.1``, so this value is ``0``.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [minor](minor) module"]
 pub type MINOR = crate::Reg<u32, _MINOR>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _MINOR;
 #[doc = "`read()` method returns [minor::R](minor::R) reader structure"]
 impl crate::Readable for MINOR {}
-#[doc = "`write(|w| ..)` method takes [minor::W](minor::W) writer structure"]
-impl crate::Writable for MINOR {}
 #[doc = "Minor git tag version. For example, this firmware was built from git tag ``v2.0.1``, so this value is ``0``."]
 pub mod minor;
-#[doc = "Revision git tag version. For example, this firmware was built from git tag ``v2.0.1``, so this value is ``1``.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [revision](revision) module"]
+#[doc = "Revision git tag version. For example, this firmware was built from git tag ``v2.0.1``, so this value is ``1``.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [revision](revision) module"]
 pub type REVISION = crate::Reg<u32, _REVISION>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _REVISION;
 #[doc = "`read()` method returns [revision::R](revision::R) reader structure"]
 impl crate::Readable for REVISION {}
-#[doc = "`write(|w| ..)` method takes [revision::W](revision::W) writer structure"]
-impl crate::Writable for REVISION {}
 #[doc = "Revision git tag version. For example, this firmware was built from git tag ``v2.0.1``, so this value is ``1``."]
 pub mod revision;
-#[doc = "Bits 24-31 of `VERSION_GITREV`. First 32-bits of the git revision. This documentation was built from git rev ``00000000``, so this value is 0, which should be enough to check out the exact git version used to build this firmware.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [gitrev3](gitrev3) module"]
+#[doc = "Bits 24-31 of `VERSION_GITREV`. First 32-bits of the git revision. This documentation was built from git rev ``00000000``, so this value is 0, which should be enough to check out the exact git version used to build this firmware.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [gitrev3](gitrev3) module"]
 pub type GITREV3 = crate::Reg<u32, _GITREV3>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _GITREV3;
 #[doc = "`read()` method returns [gitrev3::R](gitrev3::R) reader structure"]
 impl crate::Readable for GITREV3 {}
-#[doc = "`write(|w| ..)` method takes [gitrev3::W](gitrev3::W) writer structure"]
-impl crate::Writable for GITREV3 {}
 #[doc = "Bits 24-31 of `VERSION_GITREV`. First 32-bits of the git revision. This documentation was built from git rev ``00000000``, so this value is 0, which should be enough to check out the exact git version used to build this firmware."]
 pub mod gitrev3;
-#[doc = "Bits 16-23 of `VERSION_GITREV`.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [gitrev2](gitrev2) module"]
+#[doc = "Bits 16-23 of `VERSION_GITREV`.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [gitrev2](gitrev2) module"]
 pub type GITREV2 = crate::Reg<u32, _GITREV2>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _GITREV2;
 #[doc = "`read()` method returns [gitrev2::R](gitrev2::R) reader structure"]
 impl crate::Readable for GITREV2 {}
-#[doc = "`write(|w| ..)` method takes [gitrev2::W](gitrev2::W) writer structure"]
-impl crate::Writable for GITREV2 {}
 #[doc = "Bits 16-23 of `VERSION_GITREV`."]
 pub mod gitrev2;
-#[doc = "Bits 8-15 of `VERSION_GITREV`.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [gitrev1](gitrev1) module"]
+#[doc = "Bits 8-15 of `VERSION_GITREV`.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [gitrev1](gitrev1) module"]
 pub type GITREV1 = crate::Reg<u32, _GITREV1>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _GITREV1;
 #[doc = "`read()` method returns [gitrev1::R](gitrev1::R) reader structure"]
 impl crate::Readable for GITREV1 {}
-#[doc = "`write(|w| ..)` method takes [gitrev1::W](gitrev1::W) writer structure"]
-impl crate::Writable for GITREV1 {}
 #[doc = "Bits 8-15 of `VERSION_GITREV`."]
 pub mod gitrev1;
-#[doc = "Bits 0-7 of `VERSION_GITREV`.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [gitrev0](gitrev0) module"]
+#[doc = "Bits 0-7 of `VERSION_GITREV`.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [gitrev0](gitrev0) module"]
 pub type GITREV0 = crate::Reg<u32, _GITREV0>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _GITREV0;
 #[doc = "`read()` method returns [gitrev0::R](gitrev0::R) reader structure"]
 impl crate::Readable for GITREV0 {}
-#[doc = "`write(|w| ..)` method takes [gitrev0::W](gitrev0::W) writer structure"]
-impl crate::Writable for GITREV0 {}
 #[doc = "Bits 0-7 of `VERSION_GITREV`."]
 pub mod gitrev0;
-#[doc = "Bits 8-9 of `VERSION_GITEXTRA`. The number of additional commits beyond the git tag. For example, if this value is ``1``, then the repository this was built from has one additional commit beyond the tag indicated in `MAJOR`, `MINOR`, and `REVISION`.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [gitextra1](gitextra1) module"]
+#[doc = "Bits 8-9 of `VERSION_GITEXTRA`. The number of additional commits beyond the git tag. For example, if this value is ``1``, then the repository this was built from has one additional commit beyond the tag indicated in `MAJOR`, `MINOR`, and `REVISION`.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [gitextra1](gitextra1) module"]
 pub type GITEXTRA1 = crate::Reg<u32, _GITEXTRA1>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _GITEXTRA1;
 #[doc = "`read()` method returns [gitextra1::R](gitextra1::R) reader structure"]
 impl crate::Readable for GITEXTRA1 {}
-#[doc = "`write(|w| ..)` method takes [gitextra1::W](gitextra1::W) writer structure"]
-impl crate::Writable for GITEXTRA1 {}
 #[doc = "Bits 8-9 of `VERSION_GITEXTRA`. The number of additional commits beyond the git tag. For example, if this value is ``1``, then the repository this was built from has one additional commit beyond the tag indicated in `MAJOR`, `MINOR`, and `REVISION`."]
 pub mod gitextra1;
-#[doc = "Bits 0-7 of `VERSION_GITEXTRA`.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [gitextra0](gitextra0) module"]
+#[doc = "Bits 0-7 of `VERSION_GITEXTRA`.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [gitextra0](gitextra0) module"]
 pub type GITEXTRA0 = crate::Reg<u32, _GITEXTRA0>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _GITEXTRA0;
 #[doc = "`read()` method returns [gitextra0::R](gitextra0::R) reader structure"]
 impl crate::Readable for GITEXTRA0 {}
-#[doc = "`write(|w| ..)` method takes [gitextra0::W](gitextra0::W) writer structure"]
-impl crate::Writable for GITEXTRA0 {}
 #[doc = "Bits 0-7 of `VERSION_GITEXTRA`."]
 pub mod gitextra0;
-#[doc = "\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [dirty](dirty) module"]
+#[doc = "\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [dirty](dirty) module"]
 pub type DIRTY = crate::Reg<u32, _DIRTY>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _DIRTY;
 #[doc = "`read()` method returns [dirty::R](dirty::R) reader structure"]
 impl crate::Readable for DIRTY {}
-#[doc = "`write(|w| ..)` method takes [dirty::W](dirty::W) writer structure"]
-impl crate::Writable for DIRTY {}
 #[doc = ""]
 pub mod dirty;
-#[doc = "\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [model](model) module"]
+#[doc = "\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [model](model) module"]
 pub type MODEL = crate::Reg<u32, _MODEL>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _MODEL;
 #[doc = "`read()` method returns [model::R](model::R) reader structure"]
 impl crate::Readable for MODEL {}
-#[doc = "`write(|w| ..)` method takes [model::W](model::W) writer structure"]
-impl crate::Writable for MODEL {}
 #[doc = ""]
 pub mod model;
-#[doc = "Bits 24-31 of `VERSION_SEED`. 32-bit seed used for the place-and-route.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [seed3](seed3) module"]
+#[doc = "Bits 24-31 of `VERSION_SEED`. 32-bit seed used for the place-and-route.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [seed3](seed3) module"]
 pub type SEED3 = crate::Reg<u32, _SEED3>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _SEED3;
 #[doc = "`read()` method returns [seed3::R](seed3::R) reader structure"]
 impl crate::Readable for SEED3 {}
-#[doc = "`write(|w| ..)` method takes [seed3::W](seed3::W) writer structure"]
-impl crate::Writable for SEED3 {}
 #[doc = "Bits 24-31 of `VERSION_SEED`. 32-bit seed used for the place-and-route."]
 pub mod seed3;
-#[doc = "Bits 16-23 of `VERSION_SEED`.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [seed2](seed2) module"]
+#[doc = "Bits 16-23 of `VERSION_SEED`.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [seed2](seed2) module"]
 pub type SEED2 = crate::Reg<u32, _SEED2>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _SEED2;
 #[doc = "`read()` method returns [seed2::R](seed2::R) reader structure"]
 impl crate::Readable for SEED2 {}
-#[doc = "`write(|w| ..)` method takes [seed2::W](seed2::W) writer structure"]
-impl crate::Writable for SEED2 {}
 #[doc = "Bits 16-23 of `VERSION_SEED`."]
 pub mod seed2;
-#[doc = "Bits 8-15 of `VERSION_SEED`.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [seed1](seed1) module"]
+#[doc = "Bits 8-15 of `VERSION_SEED`.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [seed1](seed1) module"]
 pub type SEED1 = crate::Reg<u32, _SEED1>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _SEED1;
 #[doc = "`read()` method returns [seed1::R](seed1::R) reader structure"]
 impl crate::Readable for SEED1 {}
-#[doc = "`write(|w| ..)` method takes [seed1::W](seed1::W) writer structure"]
-impl crate::Writable for SEED1 {}
 #[doc = "Bits 8-15 of `VERSION_SEED`."]
 pub mod seed1;
-#[doc = "Bits 0-7 of `VERSION_SEED`.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [seed0](seed0) module"]
+#[doc = "Bits 0-7 of `VERSION_SEED`.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [seed0](seed0) module"]
 pub type SEED0 = crate::Reg<u32, _SEED0>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _SEED0;
 #[doc = "`read()` method returns [seed0::R](seed0::R) reader structure"]
 impl crate::Readable for SEED0 {}
-#[doc = "`write(|w| ..)` method takes [seed0::W](seed0::W) writer structure"]
-impl crate::Writable for SEED0 {}
 #[doc = "Bits 0-7 of `VERSION_SEED`."]
 pub mod seed0;
