@@ -1,8 +1,11 @@
 [package]
 name = "fomu-pac"
-version = "0.1.0"
+version = "0.0.1"
+description = "svd2rust generated pac for the fomu"
+license = "Apache-2.0"
 authors = ["David Sawatzke <david-sawatzke@users.noreply.github.com>"]
 edition = "2018"
+repository = "https://github.com/david-sawatzke/fomu-pac"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
