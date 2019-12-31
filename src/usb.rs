@@ -43,10 +43,6 @@ pub struct RegisterBlock {
     pub out_ev_pending: OUT_EV_PENDING,
     #[doc = "0x50 - "]
     pub out_ev_enable: OUT_EV_ENABLE,
-    #[doc = "0x54 - "]
-    pub out_enable_status: OUT_ENABLE_STATUS,
-    #[doc = "0x58 - "]
-    pub out_stall_status: OUT_STALL_STATUS,
 }
 #[doc = "\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [pullup_out](pullup_out) module"]
 pub type PULLUP_OUT = crate::Reg<u32, _PULLUP_OUT>;
@@ -70,26 +66,22 @@ impl crate::Readable for ADDRESS {}
 impl crate::Writable for ADDRESS {}
 #[doc = "Sets the USB device address, in order to ignore packets going to other devices on the bus. This value is reset when the host issues a USB Device Reset condition."]
 pub mod address;
-#[doc = "In ``eptri``, there are three endpoints. It is possible for an IRQ to fire and have all three bits set. Under these circumstances it can be difficult to know which event to process first. Use this register to determine which event needs to be processed first. Only one bit will ever be set at a time.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [next_ev](next_ev) module"]
+#[doc = "In ``eptri``, there are three endpoints. It is possible for an IRQ to fire and have all three bits set. Under these circumstances it can be difficult to know which event to process first. Use this register to determine which event needs to be processed first. Only one bit will ever be set at a time.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [next_ev](next_ev) module"]
 pub type NEXT_EV = crate::Reg<u32, _NEXT_EV>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _NEXT_EV;
 #[doc = "`read()` method returns [next_ev::R](next_ev::R) reader structure"]
 impl crate::Readable for NEXT_EV {}
-#[doc = "`write(|w| ..)` method takes [next_ev::W](next_ev::W) writer structure"]
-impl crate::Writable for NEXT_EV {}
 #[doc = "In ``eptri``, there are three endpoints. It is possible for an IRQ to fire and have all three bits set. Under these circumstances it can be difficult to know which event to process first. Use this register to determine which event needs to be processed first. Only one bit will ever be set at a time."]
 pub mod next_ev;
-#[doc = "Data from the last ``SETUP`` transactions. It will be 10 bytes long, because it will include the CRC16. This is a FIFO, and the queue is advanced automatically.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [setup_data](setup_data) module"]
+#[doc = "Data from the last ``SETUP`` transactions. It will be 10 bytes long, because it will include the CRC16. This is a FIFO, and the queue is advanced automatically.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [setup_data](setup_data) module"]
 pub type SETUP_DATA = crate::Reg<u32, _SETUP_DATA>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _SETUP_DATA;
 #[doc = "`read()` method returns [setup_data::R](setup_data::R) reader structure"]
 impl crate::Readable for SETUP_DATA {}
-#[doc = "`write(|w| ..)` method takes [setup_data::W](setup_data::W) writer structure"]
-impl crate::Writable for SETUP_DATA {}
 #[doc = "Data from the last ``SETUP`` transactions. It will be 10 bytes long, because it will include the CRC16. This is a FIFO, and the queue is advanced automatically."]
 pub mod setup_data;
 #[doc = "Controls for managing how to handle ``SETUP`` transactions.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [setup_ctrl](setup_ctrl) module"]
@@ -103,15 +95,13 @@ impl crate::Readable for SETUP_CTRL {}
 impl crate::Writable for SETUP_CTRL {}
 #[doc = "Controls for managing how to handle ``SETUP`` transactions."]
 pub mod setup_ctrl;
-#[doc = "Status about the most recent ``SETUP`` transactions, and the state of the FIFO.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [setup_status](setup_status) module"]
+#[doc = "Status about the most recent ``SETUP`` transactions, and the state of the FIFO.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [setup_status](setup_status) module"]
 pub type SETUP_STATUS = crate::Reg<u32, _SETUP_STATUS>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _SETUP_STATUS;
 #[doc = "`read()` method returns [setup_status::R](setup_status::R) reader structure"]
 impl crate::Readable for SETUP_STATUS {}
-#[doc = "`write(|w| ..)` method takes [setup_status::W](setup_status::W) writer structure"]
-impl crate::Writable for SETUP_STATUS {}
 #[doc = "Status about the most recent ``SETUP`` transactions, and the state of the FIFO."]
 pub mod setup_status;
 #[doc = "\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [setup_ev_status](setup_ev_status) module"]
@@ -169,15 +159,13 @@ impl crate::Readable for IN_CTRL {}
 impl crate::Writable for IN_CTRL {}
 #[doc = "Enables transmission of data in response to ``IN`` tokens, or resets the contents of the FIFO."]
 pub mod in_ctrl;
-#[doc = "Status about the IN handler. As soon as you write to `IN_DATA`, ``IN_STATUS.HAVE`` should go to ``1``.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [in_status](in_status) module"]
+#[doc = "Status about the IN handler. As soon as you write to `IN_DATA`, ``IN_STATUS.HAVE`` should go to ``1``.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [in_status](in_status) module"]
 pub type IN_STATUS = crate::Reg<u32, _IN_STATUS>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _IN_STATUS;
 #[doc = "`read()` method returns [in_status::R](in_status::R) reader structure"]
 impl crate::Readable for IN_STATUS {}
-#[doc = "`write(|w| ..)` method takes [in_status::W](in_status::W) writer structure"]
-impl crate::Writable for IN_STATUS {}
 #[doc = "Status about the IN handler. As soon as you write to `IN_DATA`, ``IN_STATUS.HAVE`` should go to ``1``."]
 pub mod in_status;
 #[doc = "\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [in_ev_status](in_ev_status) module"]
@@ -213,15 +201,13 @@ impl crate::Readable for IN_EV_ENABLE {}
 impl crate::Writable for IN_EV_ENABLE {}
 #[doc = ""]
 pub mod in_ev_enable;
-#[doc = "Data received from the host will go into a FIFO. This register reflects the contents of the top byte in that FIFO. Reading from this register advances the FIFO pointer.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [out_data](out_data) module"]
+#[doc = "Data received from the host will go into a FIFO. This register reflects the contents of the top byte in that FIFO. Reading from this register advances the FIFO pointer.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [out_data](out_data) module"]
 pub type OUT_DATA = crate::Reg<u32, _OUT_DATA>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _OUT_DATA;
 #[doc = "`read()` method returns [out_data::R](out_data::R) reader structure"]
 impl crate::Readable for OUT_DATA {}
-#[doc = "`write(|w| ..)` method takes [out_data::W](out_data::W) writer structure"]
-impl crate::Writable for OUT_DATA {}
 #[doc = "Data received from the host will go into a FIFO. This register reflects the contents of the top byte in that FIFO. Reading from this register advances the FIFO pointer."]
 pub mod out_data;
 #[doc = "Controls for receiving packet data. To enable an endpoint, write its value to ``epno``, with the ``enable`` bit set to ``1`` to enable an endpoint, or ``0`` to disable it. Resetting the OutHandler will set all ``enable`` bits to 0. Similarly, you can adjust the ``STALL`` state by setting or clearing the ``stall`` bit.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [out_ctrl](out_ctrl) module"]
@@ -235,15 +221,13 @@ impl crate::Readable for OUT_CTRL {}
 impl crate::Writable for OUT_CTRL {}
 #[doc = "Controls for receiving packet data. To enable an endpoint, write its value to ``epno``, with the ``enable`` bit set to ``1`` to enable an endpoint, or ``0`` to disable it. Resetting the OutHandler will set all ``enable`` bits to 0. Similarly, you can adjust the ``STALL`` state by setting or clearing the ``stall`` bit."]
 pub mod out_ctrl;
-#[doc = "Status about the current state of the `OUT` endpoint.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [out_status](out_status) module"]
+#[doc = "Status about the current state of the `OUT` endpoint.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [out_status](out_status) module"]
 pub type OUT_STATUS = crate::Reg<u32, _OUT_STATUS>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _OUT_STATUS;
 #[doc = "`read()` method returns [out_status::R](out_status::R) reader structure"]
 impl crate::Readable for OUT_STATUS {}
-#[doc = "`write(|w| ..)` method takes [out_status::W](out_status::W) writer structure"]
-impl crate::Writable for OUT_STATUS {}
 #[doc = "Status about the current state of the `OUT` endpoint."]
 pub mod out_status;
 #[doc = "\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [out_ev_status](out_ev_status) module"]
@@ -279,25 +263,3 @@ impl crate::Readable for OUT_EV_ENABLE {}
 impl crate::Writable for OUT_EV_ENABLE {}
 #[doc = ""]
 pub mod out_ev_enable;
-#[doc = "\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [out_enable_status](out_enable_status) module"]
-pub type OUT_ENABLE_STATUS = crate::Reg<u32, _OUT_ENABLE_STATUS>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _OUT_ENABLE_STATUS;
-#[doc = "`read()` method returns [out_enable_status::R](out_enable_status::R) reader structure"]
-impl crate::Readable for OUT_ENABLE_STATUS {}
-#[doc = "`write(|w| ..)` method takes [out_enable_status::W](out_enable_status::W) writer structure"]
-impl crate::Writable for OUT_ENABLE_STATUS {}
-#[doc = ""]
-pub mod out_enable_status;
-#[doc = "\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [out_stall_status](out_stall_status) module"]
-pub type OUT_STALL_STATUS = crate::Reg<u32, _OUT_STALL_STATUS>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _OUT_STALL_STATUS;
-#[doc = "`read()` method returns [out_stall_status::R](out_stall_status::R) reader structure"]
-impl crate::Readable for OUT_STALL_STATUS {}
-#[doc = "`write(|w| ..)` method takes [out_stall_status::W](out_stall_status::W) writer structure"]
-impl crate::Writable for OUT_STALL_STATUS {}
-#[doc = ""]
-pub mod out_stall_status;

@@ -1,11 +1,11 @@
 #[doc = r"Register block"]
 #[repr(C)]
 pub struct RegisterBlock {
-    #[doc = "0x00 - Major git tag version. For example, this firmware was built from git tag ``v2.0.1``, so this value is ``2``."]
+    #[doc = "0x00 - Major git tag version. For example, this firmware was built from git tag ``v2.0.3``, so this value is ``2``."]
     pub major: MAJOR,
-    #[doc = "0x04 - Minor git tag version. For example, this firmware was built from git tag ``v2.0.1``, so this value is ``0``."]
+    #[doc = "0x04 - Minor git tag version. For example, this firmware was built from git tag ``v2.0.3``, so this value is ``0``."]
     pub minor: MINOR,
-    #[doc = "0x08 - Revision git tag version. For example, this firmware was built from git tag ``v2.0.1``, so this value is ``1``."]
+    #[doc = "0x08 - Revision git tag version. For example, this firmware was built from git tag ``v2.0.3``, so this value is ``3``."]
     pub revision: REVISION,
     #[doc = "0x0c - Bits 24-31 of `VERSION_GITREV`. First 32-bits of the git revision. This documentation was built from git rev ``00000000``, so this value is 0, which should be enough to check out the exact git version used to build this firmware."]
     pub gitrev3: GITREV3,
@@ -32,32 +32,32 @@ pub struct RegisterBlock {
     #[doc = "0x38 - Bits 0-7 of `VERSION_SEED`."]
     pub seed0: SEED0,
 }
-#[doc = "Major git tag version. For example, this firmware was built from git tag ``v2.0.1``, so this value is ``2``.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [major](major) module"]
+#[doc = "Major git tag version. For example, this firmware was built from git tag ``v2.0.3``, so this value is ``2``.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [major](major) module"]
 pub type MAJOR = crate::Reg<u32, _MAJOR>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _MAJOR;
 #[doc = "`read()` method returns [major::R](major::R) reader structure"]
 impl crate::Readable for MAJOR {}
-#[doc = "Major git tag version. For example, this firmware was built from git tag ``v2.0.1``, so this value is ``2``."]
+#[doc = "Major git tag version. For example, this firmware was built from git tag ``v2.0.3``, so this value is ``2``."]
 pub mod major;
-#[doc = "Minor git tag version. For example, this firmware was built from git tag ``v2.0.1``, so this value is ``0``.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [minor](minor) module"]
+#[doc = "Minor git tag version. For example, this firmware was built from git tag ``v2.0.3``, so this value is ``0``.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [minor](minor) module"]
 pub type MINOR = crate::Reg<u32, _MINOR>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _MINOR;
 #[doc = "`read()` method returns [minor::R](minor::R) reader structure"]
 impl crate::Readable for MINOR {}
-#[doc = "Minor git tag version. For example, this firmware was built from git tag ``v2.0.1``, so this value is ``0``."]
+#[doc = "Minor git tag version. For example, this firmware was built from git tag ``v2.0.3``, so this value is ``0``."]
 pub mod minor;
-#[doc = "Revision git tag version. For example, this firmware was built from git tag ``v2.0.1``, so this value is ``1``.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [revision](revision) module"]
+#[doc = "Revision git tag version. For example, this firmware was built from git tag ``v2.0.3``, so this value is ``3``.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [revision](revision) module"]
 pub type REVISION = crate::Reg<u32, _REVISION>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _REVISION;
 #[doc = "`read()` method returns [revision::R](revision::R) reader structure"]
 impl crate::Readable for REVISION {}
-#[doc = "Revision git tag version. For example, this firmware was built from git tag ``v2.0.1``, so this value is ``1``."]
+#[doc = "Revision git tag version. For example, this firmware was built from git tag ``v2.0.3``, so this value is ``3``."]
 pub mod revision;
 #[doc = "Bits 24-31 of `VERSION_GITREV`. First 32-bits of the git revision. This documentation was built from git rev ``00000000``, so this value is 0, which should be enough to check out the exact git version used to build this firmware.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [gitrev3](gitrev3) module"]
 pub type GITREV3 = crate::Reg<u32, _GITREV3>;

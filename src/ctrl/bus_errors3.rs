@@ -1,14 +1,11 @@
 #[doc = "Reader of register BUS_ERRORS3"]
 pub type R = crate::R<u32, super::BUS_ERRORS3>;
-#[doc = "Writer for register BUS_ERRORS3"]
-pub type W = crate::W<u32, super::BUS_ERRORS3>;
-#[doc = "Register BUS_ERRORS3 `reset()`'s with value 0"]
-impl crate::ResetValue for super::BUS_ERRORS3 {
-    type Type = u32;
+#[doc = "Reader of field `bus_errors`"]
+pub type BUS_ERRORS_R = crate::R<u8, u8>;
+impl R {
+    #[doc = "Bits 0:7"]
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    pub fn bus_errors(&self) -> BUS_ERRORS_R {
+        BUS_ERRORS_R::new((self.bits & 0xff) as u8)
     }
 }
-impl R {}
-impl W {}

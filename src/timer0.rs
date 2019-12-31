@@ -146,48 +146,40 @@ impl crate::Readable for UPDATE_VALUE {}
 impl crate::Writable for UPDATE_VALUE {}
 #[doc = "Update of the current countdown value.A write to this register latches the current countdown value to `value` register."]
 pub mod update_value;
-#[doc = "Bits 24-31 of `TIMER0_VALUE`. Latched countdown value\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [value3](value3) module"]
+#[doc = "Bits 24-31 of `TIMER0_VALUE`. Latched countdown value\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [value3](value3) module"]
 pub type VALUE3 = crate::Reg<u32, _VALUE3>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _VALUE3;
 #[doc = "`read()` method returns [value3::R](value3::R) reader structure"]
 impl crate::Readable for VALUE3 {}
-#[doc = "`write(|w| ..)` method takes [value3::W](value3::W) writer structure"]
-impl crate::Writable for VALUE3 {}
 #[doc = "Bits 24-31 of `TIMER0_VALUE`. Latched countdown value"]
 pub mod value3;
-#[doc = "Bits 16-23 of `TIMER0_VALUE`.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [value2](value2) module"]
+#[doc = "Bits 16-23 of `TIMER0_VALUE`.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [value2](value2) module"]
 pub type VALUE2 = crate::Reg<u32, _VALUE2>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _VALUE2;
 #[doc = "`read()` method returns [value2::R](value2::R) reader structure"]
 impl crate::Readable for VALUE2 {}
-#[doc = "`write(|w| ..)` method takes [value2::W](value2::W) writer structure"]
-impl crate::Writable for VALUE2 {}
 #[doc = "Bits 16-23 of `TIMER0_VALUE`."]
 pub mod value2;
-#[doc = "Bits 8-15 of `TIMER0_VALUE`.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [value1](value1) module"]
+#[doc = "Bits 8-15 of `TIMER0_VALUE`.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [value1](value1) module"]
 pub type VALUE1 = crate::Reg<u32, _VALUE1>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _VALUE1;
 #[doc = "`read()` method returns [value1::R](value1::R) reader structure"]
 impl crate::Readable for VALUE1 {}
-#[doc = "`write(|w| ..)` method takes [value1::W](value1::W) writer structure"]
-impl crate::Writable for VALUE1 {}
 #[doc = "Bits 8-15 of `TIMER0_VALUE`."]
 pub mod value1;
-#[doc = "Bits 0-7 of `TIMER0_VALUE`.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [value0](value0) module"]
+#[doc = "Bits 0-7 of `TIMER0_VALUE`.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [value0](value0) module"]
 pub type VALUE0 = crate::Reg<u32, _VALUE0>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _VALUE0;
 #[doc = "`read()` method returns [value0::R](value0::R) reader structure"]
 impl crate::Readable for VALUE0 {}
-#[doc = "`write(|w| ..)` method takes [value0::W](value0::W) writer structure"]
-impl crate::Writable for VALUE0 {}
 #[doc = "Bits 0-7 of `TIMER0_VALUE`."]
 pub mod value0;
 #[doc = "\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [ev_status](ev_status) module"]

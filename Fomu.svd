@@ -21,54 +21,135 @@
                     <name>RESET</name>
                     <addressOffset>0x0000</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>reset</name>
+                            <msb>0</msb>
+                            <bitRange>[0:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>SCRATCH3</name>
-                    <description>Bits 24-31 of `CTRL_SCRATCH`.</description>
+                    <description><![CDATA[Bits 24-31 of `CTRL_SCRATCH`.]]></description>
                     <addressOffset>0x0004</addressOffset>
                     <resetValue>0x12</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>scratch</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>SCRATCH2</name>
-                    <description>Bits 16-23 of `CTRL_SCRATCH`.</description>
+                    <description><![CDATA[Bits 16-23 of `CTRL_SCRATCH`.]]></description>
                     <addressOffset>0x0008</addressOffset>
                     <resetValue>0x34</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>scratch</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>SCRATCH1</name>
-                    <description>Bits 8-15 of `CTRL_SCRATCH`.</description>
+                    <description><![CDATA[Bits 8-15 of `CTRL_SCRATCH`.]]></description>
                     <addressOffset>0x000c</addressOffset>
                     <resetValue>0x56</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>scratch</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>SCRATCH0</name>
-                    <description>Bits 0-7 of `CTRL_SCRATCH`.</description>
+                    <description><![CDATA[Bits 0-7 of `CTRL_SCRATCH`.]]></description>
                     <addressOffset>0x0010</addressOffset>
                     <resetValue>0x78</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>scratch</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>BUS_ERRORS3</name>
-                    <description>Bits 24-31 of `CTRL_BUS_ERRORS`.</description>
+                    <description><![CDATA[Bits 24-31 of `CTRL_BUS_ERRORS`.]]></description>
                     <addressOffset>0x0014</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-only</access>
+                    <fields>
+                        <field>
+                            <name>bus_errors</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>BUS_ERRORS2</name>
-                    <description>Bits 16-23 of `CTRL_BUS_ERRORS`.</description>
+                    <description><![CDATA[Bits 16-23 of `CTRL_BUS_ERRORS`.]]></description>
                     <addressOffset>0x0018</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-only</access>
+                    <fields>
+                        <field>
+                            <name>bus_errors</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>BUS_ERRORS1</name>
-                    <description>Bits 8-15 of `CTRL_BUS_ERRORS`.</description>
+                    <description><![CDATA[Bits 8-15 of `CTRL_BUS_ERRORS`.]]></description>
                     <addressOffset>0x001c</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-only</access>
+                    <fields>
+                        <field>
+                            <name>bus_errors</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>BUS_ERRORS0</name>
-                    <description>Bits 0-7 of `CTRL_BUS_ERRORS`.</description>
+                    <description><![CDATA[Bits 0-7 of `CTRL_BUS_ERRORS`.]]></description>
                     <addressOffset>0x0020</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-only</access>
+                    <fields>
+                        <field>
+                            <name>bus_errors</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
             </registers>
             <addressBlock>
@@ -84,10 +165,11 @@
             <registers>
                 <register>
                     <name>BITBANG</name>
-                    <description>Bitbang controls for SPI output.  Only standard 1x SPI is supported,
-meaning the IO2 and IO3 lines will be hardwired to `1` during bitbang mode.</description>
+                    <description><![CDATA[Bitbang controls for SPI output.  Only standard 1x SPI is supported, meaning the
+IO2 and IO3 lines will be hardwired to `1` during bitbang mode.]]></description>
                     <addressOffset>0x0000</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
                     <fields>
                         <field>
                             <name>mosi</name>
@@ -121,15 +203,33 @@ meaning the IO2 and IO3 lines will be hardwired to `1` during bitbang mode.</des
                 </register>
                 <register>
                     <name>MISO</name>
-                    <description>Incoming value of MISO signal.</description>
+                    <description><![CDATA[Incoming value of MISO signal.]]></description>
                     <addressOffset>0x0004</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-only</access>
+                    <fields>
+                        <field>
+                            <name>miso</name>
+                            <msb>0</msb>
+                            <bitRange>[0:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>BITBANG_EN</name>
-                    <description>Write a `1` here to disable memory-mapped mode and enable bitbang mode.</description>
+                    <description><![CDATA[Write a `1` here to disable memory-mapped mode and enable bitbang mode.]]></description>
                     <addressOffset>0x0008</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>bitbang_en</name>
+                            <msb>0</msb>
+                            <bitRange>[0:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
             </registers>
             <addressBlock>
@@ -145,22 +245,41 @@ meaning the IO2 and IO3 lines will be hardwired to `1` during bitbang mode.</des
             <registers>
                 <register>
                     <name>IN</name>
-                    <description>Write half of the FIFO to send data out the Messible. Writing to this register
-advances the write pointer automatically.</description>
+                    <description><![CDATA[Write half of the FIFO to send data out the Messible. Writing to this register
+advances the write pointer automatically.]]></description>
                     <addressOffset>0x0000</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>in</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>OUT</name>
-                    <description>Read half of the FIFO to receive data on the Messible. Reading from this
-register advances the read pointer automatically.</description>
+                    <description><![CDATA[Read half of the FIFO to receive data on the Messible. Reading from this
+register advances the read pointer automatically.]]></description>
                     <addressOffset>0x0004</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-only</access>
+                    <fields>
+                        <field>
+                            <name>out</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>STATUS</name>
                     <addressOffset>0x0008</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-only</access>
                     <fields>
                         <field>
                             <name>full</name>
@@ -192,12 +311,13 @@ register advances the read pointer automatically.</description>
             <registers>
                 <register>
                     <name>CTRL</name>
-                    <description>Provides support for rebooting the FPGA.  You can select which of the four
+                    <description><![CDATA[Provides support for rebooting the FPGA.  You can select which of the four
 images to reboot to, just be sure to OR the image number with ``0xac``.  For
 example, to reboot to the bootloader (image 0), write ``0xac``` to this
-register.</description>
+register.]]></description>
                     <addressOffset>0x0000</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
                     <fields>
                         <field>
                             <name>image</name>
@@ -220,30 +340,66 @@ memory.  To initiate a reboot, set this to ``0b101011``.]]></description>
                 </register>
                 <register>
                     <name>ADDR3</name>
-                    <description>Bits 24-31 of `REBOOT_ADDR`. This sets the reset vector for the VexRiscv.  This
+                    <description><![CDATA[Bits 24-31 of `REBOOT_ADDR`. This sets the reset vector for the VexRiscv.  This
 address will be used whenever the CPU is reset, for example through a debug
 bridge.  You should update this address whenever you load a new program, to
-enable the debugger to run ``mon reset``</description>
+enable the debugger to run ``mon reset``]]></description>
                     <addressOffset>0x0004</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>addr</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>ADDR2</name>
-                    <description>Bits 16-23 of `REBOOT_ADDR`.</description>
+                    <description><![CDATA[Bits 16-23 of `REBOOT_ADDR`.]]></description>
                     <addressOffset>0x0008</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>addr</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>ADDR1</name>
-                    <description>Bits 8-15 of `REBOOT_ADDR`.</description>
+                    <description><![CDATA[Bits 8-15 of `REBOOT_ADDR`.]]></description>
                     <addressOffset>0x000c</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>addr</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>ADDR0</name>
-                    <description>Bits 0-7 of `REBOOT_ADDR`.</description>
+                    <description><![CDATA[Bits 0-7 of `REBOOT_ADDR`.]]></description>
                     <addressOffset>0x0010</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>addr</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
             </registers>
             <addressBlock>
@@ -259,28 +415,47 @@ enable the debugger to run ``mon reset``</description>
             <registers>
                 <register>
                     <name>DAT</name>
-                    <description>This is the value for the ``SB_LEDDA_IP.DAT`` register.  It is directly written
+                    <description><![CDATA[This is the value for the ``SB_LEDDA_IP.DAT`` register.  It is directly written
 into the ``SB_LEDDA_IP`` hardware block, so you should refer to
 http://www.latticesemi.com/view_document?document_id=50668. The contents of this
 register are written to the address specified in ``ADDR`` immediately upon
-writing this register.</description>
+writing this register.]]></description>
                     <addressOffset>0x0000</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>dat</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>ADDR</name>
-                    <description>This register is directly connected to ``SB_LEDDA_IP.ADDR``.  This register
+                    <description><![CDATA[This register is directly connected to ``SB_LEDDA_IP.ADDR``.  This register
 controls the address that is updated whenever ``DAT`` is written.  Writing to
 this register has no immediate effect -- data isn't written until the ``DAT``
-register is written.</description>
+register is written.]]></description>
                     <addressOffset>0x0004</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>addr</name>
+                            <msb>3</msb>
+                            <bitRange>[3:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>CTRL</name>
-                    <description>Control logic for the RGB LED and LEDDA hardware PWM LED block.</description>
+                    <description><![CDATA[Control logic for the RGB LED and LEDDA hardware PWM LED block.]]></description>
                     <addressOffset>0x0008</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
                     <fields>
                         <field>
                             <name>exe</name>
@@ -334,11 +509,12 @@ register.]]></description>
                 </register>
                 <register>
                     <name>RAW</name>
-                    <description>Normally the hardware ``SB_LEDDA_IP`` block controls the brightness of the LED,
+                    <description><![CDATA[Normally the hardware ``SB_LEDDA_IP`` block controls the brightness of the LED,
 creating a gentle fading pattern.  However, by setting the appropriate bit in
-``CTRL``, it is possible to manually control the three individual LEDs.</description>
+``CTRL``, it is possible to manually control the three individual LEDs.]]></description>
                     <addressOffset>0x000c</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
                     <fields>
                         <field>
                             <name>r</name>
@@ -377,108 +553,261 @@ creating a gentle fading pattern.  However, by setting the appropriate bit in
             <registers>
                 <register>
                     <name>LOAD3</name>
-                    <description>Bits 24-31 of `TIMER0_LOAD`. Load value when Timer is (re-)enabled.In One-Shot
-mode, the value written to this register specify the Timer's duration in
-clock cycles.</description>
+                    <description><![CDATA[Bits 24-31 of `TIMER0_LOAD`. Load value when Timer is (re-)enabled.In One-Shot
+mode, the value written to this register specify the Timer's duration in clock
+cycles.]]></description>
                     <addressOffset>0x0000</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>load</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>LOAD2</name>
-                    <description>Bits 16-23 of `TIMER0_LOAD`.</description>
+                    <description><![CDATA[Bits 16-23 of `TIMER0_LOAD`.]]></description>
                     <addressOffset>0x0004</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>load</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>LOAD1</name>
-                    <description>Bits 8-15 of `TIMER0_LOAD`.</description>
+                    <description><![CDATA[Bits 8-15 of `TIMER0_LOAD`.]]></description>
                     <addressOffset>0x0008</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>load</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>LOAD0</name>
-                    <description>Bits 0-7 of `TIMER0_LOAD`.</description>
+                    <description><![CDATA[Bits 0-7 of `TIMER0_LOAD`.]]></description>
                     <addressOffset>0x000c</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>load</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>RELOAD3</name>
-                    <description>Bits 24-31 of `TIMER0_RELOAD`. Reload value when Timer reaches 0.In Periodic
-mode, the value written to this register specify the Timer's period in
-clock cycles.</description>
+                    <description><![CDATA[Bits 24-31 of `TIMER0_RELOAD`. Reload value when Timer reaches 0.In Periodic
+mode, the value written to this register specify the Timer's period in clock
+cycles.]]></description>
                     <addressOffset>0x0010</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>reload</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>RELOAD2</name>
-                    <description>Bits 16-23 of `TIMER0_RELOAD`.</description>
+                    <description><![CDATA[Bits 16-23 of `TIMER0_RELOAD`.]]></description>
                     <addressOffset>0x0014</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>reload</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>RELOAD1</name>
-                    <description>Bits 8-15 of `TIMER0_RELOAD`.</description>
+                    <description><![CDATA[Bits 8-15 of `TIMER0_RELOAD`.]]></description>
                     <addressOffset>0x0018</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>reload</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>RELOAD0</name>
-                    <description>Bits 0-7 of `TIMER0_RELOAD`.</description>
+                    <description><![CDATA[Bits 0-7 of `TIMER0_RELOAD`.]]></description>
                     <addressOffset>0x001c</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>reload</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>EN</name>
-                    <description>Enable of the Timer.Set if to 1 to enable/start the Timer and 0 to disable the
-Timer</description>
+                    <description><![CDATA[Enable of the Timer.Set if to 1 to enable/start the Timer and 0 to disable the
+Timer]]></description>
                     <addressOffset>0x0020</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>en</name>
+                            <msb>0</msb>
+                            <bitRange>[0:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>UPDATE_VALUE</name>
-                    <description>Update of the current countdown value.A write to this register latches the
-current countdown value to `value` register.</description>
+                    <description><![CDATA[Update of the current countdown value.A write to this register latches the
+current countdown value to `value` register.]]></description>
                     <addressOffset>0x0024</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>update_value</name>
+                            <msb>0</msb>
+                            <bitRange>[0:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>VALUE3</name>
-                    <description>Bits 24-31 of `TIMER0_VALUE`. Latched countdown value</description>
+                    <description><![CDATA[Bits 24-31 of `TIMER0_VALUE`. Latched countdown value]]></description>
                     <addressOffset>0x0028</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-only</access>
+                    <fields>
+                        <field>
+                            <name>value</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>VALUE2</name>
-                    <description>Bits 16-23 of `TIMER0_VALUE`.</description>
+                    <description><![CDATA[Bits 16-23 of `TIMER0_VALUE`.]]></description>
                     <addressOffset>0x002c</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-only</access>
+                    <fields>
+                        <field>
+                            <name>value</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>VALUE1</name>
-                    <description>Bits 8-15 of `TIMER0_VALUE`.</description>
+                    <description><![CDATA[Bits 8-15 of `TIMER0_VALUE`.]]></description>
                     <addressOffset>0x0030</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-only</access>
+                    <fields>
+                        <field>
+                            <name>value</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>VALUE0</name>
-                    <description>Bits 0-7 of `TIMER0_VALUE`.</description>
+                    <description><![CDATA[Bits 0-7 of `TIMER0_VALUE`.]]></description>
                     <addressOffset>0x0034</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-only</access>
+                    <fields>
+                        <field>
+                            <name>value</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>EV_STATUS</name>
                     <addressOffset>0x0038</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>status</name>
+                            <msb>0</msb>
+                            <bitRange>[0:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>EV_PENDING</name>
                     <addressOffset>0x003c</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>pending</name>
+                            <msb>0</msb>
+                            <bitRange>[0:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>EV_ENABLE</name>
                     <addressOffset>0x0040</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>enable</name>
+                            <msb>0</msb>
+                            <bitRange>[0:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
             </registers>
             <addressBlock>
@@ -498,21 +827,48 @@ current countdown value to `value` register.</description>
             <registers>
                 <register>
                     <name>O</name>
-                    <description>Output values for pads 1-4</description>
+                    <description><![CDATA[Output values for pads 1-4]]></description>
                     <addressOffset>0x0000</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>o</name>
+                            <msb>3</msb>
+                            <bitRange>[3:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>OE</name>
-                    <description>Output enable control for pads 1-4</description>
+                    <description><![CDATA[Output enable control for pads 1-4]]></description>
                     <addressOffset>0x0004</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>oe</name>
+                            <msb>3</msb>
+                            <bitRange>[3:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>I</name>
-                    <description>Input value for pads 1-4</description>
+                    <description><![CDATA[Input value for pads 1-4]]></description>
                     <addressOffset>0x0008</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-only</access>
+                    <fields>
+                        <field>
+                            <name>i</name>
+                            <msb>3</msb>
+                            <bitRange>[3:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
             </registers>
             <addressBlock>
@@ -530,14 +886,24 @@ current countdown value to `value` register.</description>
                     <name>PULLUP_OUT</name>
                     <addressOffset>0x0000</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>pullup_out</name>
+                            <msb>0</msb>
+                            <bitRange>[0:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>ADDRESS</name>
-                    <description>Sets the USB device address, in order to ignore packets going to other devices
+                    <description><![CDATA[Sets the USB device address, in order to ignore packets going to other devices
 on the bus. This value is reset when the host issues a USB Device Reset
-condition.</description>
+condition.]]></description>
                     <addressOffset>0x0004</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
                     <fields>
                         <field>
                             <name>addr</name>
@@ -550,12 +916,13 @@ condition.</description>
                 </register>
                 <register>
                     <name>NEXT_EV</name>
-                    <description>In ``eptri``, there are three endpoints.  It is possible for an IRQ to fire and
+                    <description><![CDATA[In ``eptri``, there are three endpoints.  It is possible for an IRQ to fire and
 have all three bits set.  Under these circumstances it can be difficult to know
 which event to process first.  Use this register to determine which event needs
-to be processed first. Only one bit will ever be set at a time.</description>
+to be processed first. Only one bit will ever be set at a time.]]></description>
                     <addressOffset>0x0008</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-only</access>
                     <fields>
                         <field>
                             <name>in</name>
@@ -589,11 +956,12 @@ to be processed first. Only one bit will ever be set at a time.</description>
                 </register>
                 <register>
                     <name>SETUP_DATA</name>
-                    <description>Data from the last ``SETUP`` transactions.  It will be 10 bytes long, because
-it will include the CRC16.  This is a FIFO, and the queue is advanced
-automatically.</description>
+                    <description><![CDATA[Data from the last ``SETUP`` transactions.  It will be 10 bytes long, because it
+will include the CRC16.  This is a FIFO, and the queue is advanced
+automatically.]]></description>
                     <addressOffset>0x000c</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-only</access>
                     <fields>
                         <field>
                             <name>data</name>
@@ -606,9 +974,10 @@ automatically.</description>
                 </register>
                 <register>
                     <name>SETUP_CTRL</name>
-                    <description>Controls for managing how to handle ``SETUP`` transactions.</description>
+                    <description><![CDATA[Controls for managing how to handle ``SETUP`` transactions.]]></description>
                     <addressOffset>0x0010</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
                     <fields>
                         <field>
                             <name>reset</name>
@@ -621,9 +990,10 @@ automatically.</description>
                 </register>
                 <register>
                     <name>SETUP_STATUS</name>
-                    <description>Status about the most recent ``SETUP`` transactions, and the state of the FIFO.</description>
+                    <description><![CDATA[Status about the most recent ``SETUP`` transactions, and the state of the FIFO.]]></description>
                     <addressOffset>0x0014</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-only</access>
                     <fields>
                         <field>
                             <name>epno</name>
@@ -666,25 +1036,53 @@ automatically.</description>
                     <name>SETUP_EV_STATUS</name>
                     <addressOffset>0x0018</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>setup_ev_status</name>
+                            <msb>1</msb>
+                            <bitRange>[1:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>SETUP_EV_PENDING</name>
                     <addressOffset>0x001c</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>setup_ev_pending</name>
+                            <msb>1</msb>
+                            <bitRange>[1:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>SETUP_EV_ENABLE</name>
                     <addressOffset>0x0020</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>setup_ev_enable</name>
+                            <msb>1</msb>
+                            <bitRange>[1:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>IN_DATA</name>
-                    <description>Each byte written into this register gets added to an outgoing FIFO. Any bytes
+                    <description><![CDATA[Each byte written into this register gets added to an outgoing FIFO. Any bytes
 that are written here will be transmitted in the order in which they were added.
 The FIFO queue is automatically advanced with each write. The FIFO queue is 64
-bytes deep.  If you exceed this amount, the result is undefined.</description>
+bytes deep.  If you exceed this amount, the result is undefined.]]></description>
                     <addressOffset>0x0024</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
                     <fields>
                         <field>
                             <name>data</name>
@@ -697,10 +1095,11 @@ bytes deep.  If you exceed this amount, the result is undefined.</description>
                 </register>
                 <register>
                     <name>IN_CTRL</name>
-                    <description>Enables transmission of data in response to ``IN`` tokens, or resets the
-contents of the FIFO.</description>
+                    <description><![CDATA[Enables transmission of data in response to ``IN`` tokens, or resets the
+contents of the FIFO.]]></description>
                     <addressOffset>0x0028</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
                     <fields>
                         <field>
                             <name>epno</name>
@@ -727,10 +1126,11 @@ contents of the FIFO.</description>
                 </register>
                 <register>
                     <name>IN_STATUS</name>
-                    <description>Status about the IN handler.  As soon as you write to `IN_DATA`,
-``IN_STATUS.HAVE`` should go to ``1``.</description>
+                    <description><![CDATA[Status about the IN handler.  As soon as you write to `IN_DATA`,
+``IN_STATUS.HAVE`` should go to ``1``.]]></description>
                     <addressOffset>0x002c</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-only</access>
                     <fields>
                         <field>
                             <name>idle</name>
@@ -759,24 +1159,52 @@ contents of the FIFO.</description>
                     <name>IN_EV_STATUS</name>
                     <addressOffset>0x0030</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>in_ev_status</name>
+                            <msb>0</msb>
+                            <bitRange>[0:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>IN_EV_PENDING</name>
                     <addressOffset>0x0034</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>in_ev_pending</name>
+                            <msb>0</msb>
+                            <bitRange>[0:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>IN_EV_ENABLE</name>
                     <addressOffset>0x0038</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>in_ev_enable</name>
+                            <msb>0</msb>
+                            <bitRange>[0:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>OUT_DATA</name>
-                    <description>Data received from the host will go into a FIFO.  This register reflects the
+                    <description><![CDATA[Data received from the host will go into a FIFO.  This register reflects the
 contents of the top byte in that FIFO.  Reading from this register advances the
-FIFO pointer.</description>
+FIFO pointer.]]></description>
                     <addressOffset>0x003c</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-only</access>
                     <fields>
                         <field>
                             <name>data</name>
@@ -789,14 +1217,15 @@ FIFO pointer.</description>
                 </register>
                 <register>
                     <name>OUT_CTRL</name>
-                    <description>Controls for receiving packet data.  To enable an endpoint, write its value to
+                    <description><![CDATA[Controls for receiving packet data.  To enable an endpoint, write its value to
 ``epno``, with the ``enable`` bit set to ``1`` to enable an endpoint, or ``0``
 to disable it. Resetting the OutHandler will set all ``enable`` bits to 0.
 
 Similarly, you can adjust the ``STALL`` state by setting or clearing the
-``stall`` bit.</description>
+``stall`` bit.]]></description>
                     <addressOffset>0x0040</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
                     <fields>
                         <field>
                             <name>epno</name>
@@ -830,9 +1259,10 @@ Similarly, you can adjust the ``STALL`` state by setting or clearing the
                 </register>
                 <register>
                     <name>OUT_STATUS</name>
-                    <description>Status about the current state of the `OUT` endpoint.</description>
+                    <description><![CDATA[Status about the current state of the `OUT` endpoint.]]></description>
                     <addressOffset>0x0044</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-only</access>
                     <fields>
                         <field>
                             <name>epno</name>
@@ -861,31 +1291,48 @@ Similarly, you can adjust the ``STALL`` state by setting or clearing the
                     <name>OUT_EV_STATUS</name>
                     <addressOffset>0x0048</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>out_ev_status</name>
+                            <msb>0</msb>
+                            <bitRange>[0:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>OUT_EV_PENDING</name>
                     <addressOffset>0x004c</addressOffset>
                     <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>out_ev_pending</name>
+                            <msb>0</msb>
+                            <bitRange>[0:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>OUT_EV_ENABLE</name>
                     <addressOffset>0x0050</addressOffset>
                     <resetValue>0x00</resetValue>
-                </register>
-                <register>
-                    <name>OUT_ENABLE_STATUS</name>
-                    <addressOffset>0x0054</addressOffset>
-                    <resetValue>0x00</resetValue>
-                </register>
-                <register>
-                    <name>OUT_STALL_STATUS</name>
-                    <addressOffset>0x0058</addressOffset>
-                    <resetValue>0x00</resetValue>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>out_ev_enable</name>
+                            <msb>0</msb>
+                            <bitRange>[0:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
             </registers>
             <addressBlock>
                 <offset>0</offset>
-                <size>0x5c</size>
+                <size>0x54</size>
                 <usage>registers</usage>
             </addressBlock>
             <interrupt>
@@ -900,79 +1347,152 @@ Similarly, you can adjust the ``STALL`` state by setting or clearing the
             <registers>
                 <register>
                     <name>MAJOR</name>
-                    <description>Major git tag version.  For example, this firmware was built from git tag
-``v2.0.1``, so this value is ``2``.</description>
+                    <description><![CDATA[Major git tag version.  For example, this firmware was built from git tag
+``v2.0.3``, so this value is ``2``.]]></description>
                     <addressOffset>0x0000</addressOffset>
                     <resetValue>0x02</resetValue>
                     <access>read-only</access>
+                    <fields>
+                        <field>
+                            <name>major</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>MINOR</name>
-                    <description>Minor git tag version.  For example, this firmware was built from git tag
-``v2.0.1``, so this value is ``0``.</description>
+                    <description><![CDATA[Minor git tag version.  For example, this firmware was built from git tag
+``v2.0.3``, so this value is ``0``.]]></description>
                     <addressOffset>0x0004</addressOffset>
                     <resetValue>0x00</resetValue>
                     <access>read-only</access>
+                    <fields>
+                        <field>
+                            <name>minor</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>REVISION</name>
-                    <description>Revision git tag version.  For example, this firmware was built from git tag
-``v2.0.1``, so this value is ``1``.</description>
+                    <description><![CDATA[Revision git tag version.  For example, this firmware was built from git tag
+``v2.0.3``, so this value is ``3``.]]></description>
                     <addressOffset>0x0008</addressOffset>
-                    <resetValue>0x01</resetValue>
+                    <resetValue>0x03</resetValue>
                     <access>read-only</access>
+                    <fields>
+                        <field>
+                            <name>revision</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>GITREV3</name>
-                    <description>Bits 24-31 of `VERSION_GITREV`. First 32-bits of the git revision.  This
+                    <description><![CDATA[Bits 24-31 of `VERSION_GITREV`. First 32-bits of the git revision.  This
 documentation was built from git rev ``00000000``, so this value is 0, which
-should be enough to check out the exact git version used to build this firmware.</description>
+should be enough to check out the exact git version used to build this firmware.]]></description>
                     <addressOffset>0x000c</addressOffset>
                     <resetValue>0x00</resetValue>
                     <access>read-only</access>
+                    <fields>
+                        <field>
+                            <name>gitrev</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>GITREV2</name>
-                    <description>Bits 16-23 of `VERSION_GITREV`.</description>
+                    <description><![CDATA[Bits 16-23 of `VERSION_GITREV`.]]></description>
                     <addressOffset>0x0010</addressOffset>
                     <resetValue>0x00</resetValue>
                     <access>read-only</access>
+                    <fields>
+                        <field>
+                            <name>gitrev</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>GITREV1</name>
-                    <description>Bits 8-15 of `VERSION_GITREV`.</description>
+                    <description><![CDATA[Bits 8-15 of `VERSION_GITREV`.]]></description>
                     <addressOffset>0x0014</addressOffset>
                     <resetValue>0x00</resetValue>
                     <access>read-only</access>
+                    <fields>
+                        <field>
+                            <name>gitrev</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>GITREV0</name>
-                    <description>Bits 0-7 of `VERSION_GITREV`.</description>
+                    <description><![CDATA[Bits 0-7 of `VERSION_GITREV`.]]></description>
                     <addressOffset>0x0018</addressOffset>
                     <resetValue>0x00</resetValue>
                     <access>read-only</access>
+                    <fields>
+                        <field>
+                            <name>gitrev</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>GITEXTRA1</name>
-                    <description>Bits 8-9 of `VERSION_GITEXTRA`. The number of additional commits beyond the git
+                    <description><![CDATA[Bits 8-9 of `VERSION_GITEXTRA`. The number of additional commits beyond the git
 tag.  For example, if this value is ``1``, then the repository this was built
 from has one additional commit beyond the tag indicated in `MAJOR`, `MINOR`, and
-`REVISION`.</description>
+`REVISION`.]]></description>
                     <addressOffset>0x001c</addressOffset>
                     <resetValue>0x00</resetValue>
                     <access>read-only</access>
+                    <fields>
+                        <field>
+                            <name>gitextra</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>GITEXTRA0</name>
-                    <description>Bits 0-7 of `VERSION_GITEXTRA`.</description>
+                    <description><![CDATA[Bits 0-7 of `VERSION_GITEXTRA`.]]></description>
                     <addressOffset>0x0020</addressOffset>
                     <resetValue>0x01</resetValue>
                     <access>read-only</access>
+                    <fields>
+                        <field>
+                            <name>gitextra</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>DIRTY</name>
                     <addressOffset>0x0024</addressOffset>
                     <resetValue>0x01</resetValue>
+                    <access>read-only</access>
                     <fields>
                         <field>
                             <name>dirty</name>
@@ -983,7 +1503,6 @@ from has one additional commit beyond the tag indicated in `MAJOR`, `MINOR`, and
 modifications.]]></description>
                         </field>
                     </fields>
-                    <access>read-only</access>
                 </register>
                 <register>
                     <name>MODEL</name>
@@ -1002,31 +1521,63 @@ modifications.]]></description>
                 </register>
                 <register>
                     <name>SEED3</name>
-                    <description>Bits 24-31 of `VERSION_SEED`. 32-bit seed used for the place-and-route.</description>
+                    <description><![CDATA[Bits 24-31 of `VERSION_SEED`. 32-bit seed used for the place-and-route.]]></description>
                     <addressOffset>0x002c</addressOffset>
                     <resetValue>0x00</resetValue>
                     <access>read-only</access>
+                    <fields>
+                        <field>
+                            <name>seed</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>SEED2</name>
-                    <description>Bits 16-23 of `VERSION_SEED`.</description>
+                    <description><![CDATA[Bits 16-23 of `VERSION_SEED`.]]></description>
                     <addressOffset>0x0030</addressOffset>
                     <resetValue>0x00</resetValue>
                     <access>read-only</access>
+                    <fields>
+                        <field>
+                            <name>seed</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>SEED1</name>
-                    <description>Bits 8-15 of `VERSION_SEED`.</description>
+                    <description><![CDATA[Bits 8-15 of `VERSION_SEED`.]]></description>
                     <addressOffset>0x0034</addressOffset>
                     <resetValue>0x00</resetValue>
                     <access>read-only</access>
+                    <fields>
+                        <field>
+                            <name>seed</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>SEED0</name>
-                    <description>Bits 0-7 of `VERSION_SEED`.</description>
+                    <description><![CDATA[Bits 0-7 of `VERSION_SEED`.]]></description>
                     <addressOffset>0x0038</addressOffset>
-                    <resetValue>0x03</resetValue>
+                    <resetValue>0x00</resetValue>
                     <access>read-only</access>
+                    <fields>
+                        <field>
+                            <name>seed</name>
+                            <msb>7</msb>
+                            <bitRange>[7:0]</bitRange>
+                            <lsb>0</lsb>
+                        </field>
+                    </fields>
                 </register>
             </registers>
             <addressBlock>

@@ -75,47 +75,39 @@ impl crate::Readable for SCRATCH0 {}
 impl crate::Writable for SCRATCH0 {}
 #[doc = "Bits 0-7 of `CTRL_SCRATCH`."]
 pub mod scratch0;
-#[doc = "Bits 24-31 of `CTRL_BUS_ERRORS`.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [bus_errors3](bus_errors3) module"]
+#[doc = "Bits 24-31 of `CTRL_BUS_ERRORS`.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [bus_errors3](bus_errors3) module"]
 pub type BUS_ERRORS3 = crate::Reg<u32, _BUS_ERRORS3>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _BUS_ERRORS3;
 #[doc = "`read()` method returns [bus_errors3::R](bus_errors3::R) reader structure"]
 impl crate::Readable for BUS_ERRORS3 {}
-#[doc = "`write(|w| ..)` method takes [bus_errors3::W](bus_errors3::W) writer structure"]
-impl crate::Writable for BUS_ERRORS3 {}
 #[doc = "Bits 24-31 of `CTRL_BUS_ERRORS`."]
 pub mod bus_errors3;
-#[doc = "Bits 16-23 of `CTRL_BUS_ERRORS`.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [bus_errors2](bus_errors2) module"]
+#[doc = "Bits 16-23 of `CTRL_BUS_ERRORS`.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [bus_errors2](bus_errors2) module"]
 pub type BUS_ERRORS2 = crate::Reg<u32, _BUS_ERRORS2>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _BUS_ERRORS2;
 #[doc = "`read()` method returns [bus_errors2::R](bus_errors2::R) reader structure"]
 impl crate::Readable for BUS_ERRORS2 {}
-#[doc = "`write(|w| ..)` method takes [bus_errors2::W](bus_errors2::W) writer structure"]
-impl crate::Writable for BUS_ERRORS2 {}
 #[doc = "Bits 16-23 of `CTRL_BUS_ERRORS`."]
 pub mod bus_errors2;
-#[doc = "Bits 8-15 of `CTRL_BUS_ERRORS`.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [bus_errors1](bus_errors1) module"]
+#[doc = "Bits 8-15 of `CTRL_BUS_ERRORS`.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [bus_errors1](bus_errors1) module"]
 pub type BUS_ERRORS1 = crate::Reg<u32, _BUS_ERRORS1>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _BUS_ERRORS1;
 #[doc = "`read()` method returns [bus_errors1::R](bus_errors1::R) reader structure"]
 impl crate::Readable for BUS_ERRORS1 {}
-#[doc = "`write(|w| ..)` method takes [bus_errors1::W](bus_errors1::W) writer structure"]
-impl crate::Writable for BUS_ERRORS1 {}
 #[doc = "Bits 8-15 of `CTRL_BUS_ERRORS`."]
 pub mod bus_errors1;
-#[doc = "Bits 0-7 of `CTRL_BUS_ERRORS`.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [bus_errors0](bus_errors0) module"]
+#[doc = "Bits 0-7 of `CTRL_BUS_ERRORS`.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [bus_errors0](bus_errors0) module"]
 pub type BUS_ERRORS0 = crate::Reg<u32, _BUS_ERRORS0>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _BUS_ERRORS0;
 #[doc = "`read()` method returns [bus_errors0::R](bus_errors0::R) reader structure"]
 impl crate::Readable for BUS_ERRORS0 {}
-#[doc = "`write(|w| ..)` method takes [bus_errors0::W](bus_errors0::W) writer structure"]
-impl crate::Writable for BUS_ERRORS0 {}
 #[doc = "Bits 0-7 of `CTRL_BUS_ERRORS`."]
 pub mod bus_errors0;

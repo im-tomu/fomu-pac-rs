@@ -19,15 +19,13 @@ impl crate::Readable for BITBANG {}
 impl crate::Writable for BITBANG {}
 #[doc = "Bitbang controls for SPI output. Only standard 1x SPI is supported, meaning the IO2 and IO3 lines will be hardwired to `1` during bitbang mode."]
 pub mod bitbang;
-#[doc = "Incoming value of MISO signal.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [miso](miso) module"]
+#[doc = "Incoming value of MISO signal.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [miso](miso) module"]
 pub type MISO = crate::Reg<u32, _MISO>;
 #[allow(missing_docs)]
 #[doc(hidden)]
 pub struct _MISO;
 #[doc = "`read()` method returns [miso::R](miso::R) reader structure"]
 impl crate::Readable for MISO {}
-#[doc = "`write(|w| ..)` method takes [miso::W](miso::W) writer structure"]
-impl crate::Writable for MISO {}
 #[doc = "Incoming value of MISO signal."]
 pub mod miso;
 #[doc = "Write a `1` here to disable memory-mapped mode and enable bitbang mode.\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [bitbang_en](bitbang_en) module"]

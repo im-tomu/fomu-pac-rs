@@ -1,14 +1,11 @@
 #[doc = "Reader of register I"]
 pub type R = crate::R<u32, super::I>;
-#[doc = "Writer for register I"]
-pub type W = crate::W<u32, super::I>;
-#[doc = "Register I `reset()`'s with value 0"]
-impl crate::ResetValue for super::I {
-    type Type = u32;
+#[doc = "Reader of field `i`"]
+pub type I_R = crate::R<u8, u8>;
+impl R {
+    #[doc = "Bits 0:3"]
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    pub fn i(&self) -> I_R {
+        I_R::new((self.bits & 0x0f) as u8)
     }
 }
-impl R {}
-impl W {}

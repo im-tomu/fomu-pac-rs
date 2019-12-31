@@ -1,14 +1,11 @@
 #[doc = "Reader of register MISO"]
 pub type R = crate::R<u32, super::MISO>;
-#[doc = "Writer for register MISO"]
-pub type W = crate::W<u32, super::MISO>;
-#[doc = "Register MISO `reset()`'s with value 0"]
-impl crate::ResetValue for super::MISO {
-    type Type = u32;
+#[doc = "Reader of field `miso`"]
+pub type MISO_R = crate::R<bool, bool>;
+impl R {
+    #[doc = "Bit 0"]
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    pub fn miso(&self) -> MISO_R {
+        MISO_R::new((self.bits & 0x01) != 0)
     }
 }
-impl R {}
-impl W {}

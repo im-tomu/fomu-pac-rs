@@ -10,5 +10,31 @@ impl crate::ResetValue for super::OE {
         0
     }
 }
-impl R {}
-impl W {}
+#[doc = "Reader of field `oe`"]
+pub type OE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `oe`"]
+pub struct OE_W<'a> {
+    w: &'a mut W,
+}
+impl<'a> OE_W<'a> {
+    #[doc = r"Writes raw bits to the field"]
+    #[inline(always)]
+    pub unsafe fn bits(self, value: u8) -> &'a mut W {
+        self.w.bits = (self.w.bits & !0x0f) | ((value as u32) & 0x0f);
+        self.w
+    }
+}
+impl R {
+    #[doc = "Bits 0:3"]
+    #[inline(always)]
+    pub fn oe(&self) -> OE_R {
+        OE_R::new((self.bits & 0x0f) as u8)
+    }
+}
+impl W {
+    #[doc = "Bits 0:3"]
+    #[inline(always)]
+    pub fn oe(&mut self) -> OE_W {
+        OE_W { w: self }
+    }
+}

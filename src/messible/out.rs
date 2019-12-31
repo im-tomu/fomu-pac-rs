@@ -1,14 +1,11 @@
 #[doc = "Reader of register OUT"]
 pub type R = crate::R<u32, super::OUT>;
-#[doc = "Writer for register OUT"]
-pub type W = crate::W<u32, super::OUT>;
-#[doc = "Register OUT `reset()`'s with value 0"]
-impl crate::ResetValue for super::OUT {
-    type Type = u32;
+#[doc = "Reader of field `out`"]
+pub type OUT_R = crate::R<u8, u8>;
+impl R {
+    #[doc = "Bits 0:7"]
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    pub fn out(&self) -> OUT_R {
+        OUT_R::new((self.bits & 0xff) as u8)
     }
 }
-impl R {}
-impl W {}
