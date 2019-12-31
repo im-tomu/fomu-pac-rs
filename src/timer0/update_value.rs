@@ -1,10 +1,10 @@
 #[doc = "Reader of register UPDATE_VALUE"]
-pub type R = crate::R<u32, super::UPDATE_VALUE>;
+pub type R = crate::R<u8, super::UPDATE_VALUE>;
 #[doc = "Writer for register UPDATE_VALUE"]
-pub type W = crate::W<u32, super::UPDATE_VALUE>;
+pub type W = crate::W<u8, super::UPDATE_VALUE>;
 #[doc = "Register UPDATE_VALUE `reset()`'s with value 0"]
 impl crate::ResetValue for super::UPDATE_VALUE {
-    type Type = u32;
+    type Type = u8;
     #[inline(always)]
     fn reset_value() -> Self::Type {
         0
@@ -30,7 +30,7 @@ impl<'a> UPDATE_VALUE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | ((value as u32) & 0x01);
+        self.w.bits = (self.w.bits & !0x01) | ((value as u8) & 0x01);
         self.w
     }
 }

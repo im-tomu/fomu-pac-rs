@@ -1,10 +1,10 @@
 #[doc = "Reader of register SCRATCH3"]
-pub type R = crate::R<u32, super::SCRATCH3>;
+pub type R = crate::R<u8, super::SCRATCH3>;
 #[doc = "Writer for register SCRATCH3"]
-pub type W = crate::W<u32, super::SCRATCH3>;
+pub type W = crate::W<u8, super::SCRATCH3>;
 #[doc = "Register SCRATCH3 `reset()`'s with value 0x12"]
 impl crate::ResetValue for super::SCRATCH3 {
-    type Type = u32;
+    type Type = u8;
     #[inline(always)]
     fn reset_value() -> Self::Type {
         0x12
@@ -20,7 +20,7 @@ impl<'a> SCRATCH_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xff) | ((value as u32) & 0xff);
+        self.w.bits = (self.w.bits & !0xff) | ((value as u8) & 0xff);
         self.w
     }
 }

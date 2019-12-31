@@ -1,5 +1,5 @@
 #[doc = "Reader of register DIRTY"]
-pub type R = crate::R<u32, super::DIRTY>;
+pub type R = crate::R<u8, super::DIRTY>;
 #[doc = "Reader of field `dirty`"]
 pub type DIRTY_R = crate::R<bool, bool>;
 impl R {

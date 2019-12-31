@@ -1,10 +1,10 @@
 #[doc = "Reader of register SETUP_EV_PENDING"]
-pub type R = crate::R<u32, super::SETUP_EV_PENDING>;
+pub type R = crate::R<u8, super::SETUP_EV_PENDING>;
 #[doc = "Writer for register SETUP_EV_PENDING"]
-pub type W = crate::W<u32, super::SETUP_EV_PENDING>;
+pub type W = crate::W<u8, super::SETUP_EV_PENDING>;
 #[doc = "Register SETUP_EV_PENDING `reset()`'s with value 0"]
 impl crate::ResetValue for super::SETUP_EV_PENDING {
-    type Type = u32;
+    type Type = u8;
     #[inline(always)]
     fn reset_value() -> Self::Type {
         0
@@ -20,7 +20,7 @@ impl<'a> SETUP_EV_PENDING_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x03) | ((value as u32) & 0x03);
+        self.w.bits = (self.w.bits & !0x03) | ((value as u8) & 0x03);
         self.w
     }
 }

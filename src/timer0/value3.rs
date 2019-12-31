@@ -1,5 +1,5 @@
 #[doc = "Reader of register VALUE3"]
-pub type R = crate::R<u32, super::VALUE3>;
+pub type R = crate::R<u8, super::VALUE3>;
 #[doc = "Reader of field `value`"]
 pub type VALUE_R = crate::R<u8, u8>;
 impl R {

@@ -1,10 +1,10 @@
 #[doc = "Reader of register RAW"]
-pub type R = crate::R<u32, super::RAW>;
+pub type R = crate::R<u8, super::RAW>;
 #[doc = "Writer for register RAW"]
-pub type W = crate::W<u32, super::RAW>;
+pub type W = crate::W<u8, super::RAW>;
 #[doc = "Register RAW `reset()`'s with value 0"]
 impl crate::ResetValue for super::RAW {
-    type Type = u32;
+    type Type = u8;
     #[inline(always)]
     fn reset_value() -> Self::Type {
         0
@@ -30,7 +30,7 @@ impl<'a> R_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | ((value as u32) & 0x01);
+        self.w.bits = (self.w.bits & !0x01) | ((value as u8) & 0x01);
         self.w
     }
 }
@@ -54,7 +54,7 @@ impl<'a> G_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | (((value as u32) & 0x01) << 1);
+        self.w.bits = (self.w.bits & !(0x01 << 1)) | (((value as u8) & 0x01) << 1);
         self.w
     }
 }
@@ -78,7 +78,7 @@ impl<'a> B_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | (((value as u32) & 0x01) << 2);
+        self.w.bits = (self.w.bits & !(0x01 << 2)) | (((value as u8) & 0x01) << 2);
         self.w
     }
 }

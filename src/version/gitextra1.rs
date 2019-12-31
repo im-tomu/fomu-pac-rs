@@ -1,5 +1,5 @@
 #[doc = "Reader of register GITEXTRA1"]
-pub type R = crate::R<u32, super::GITEXTRA1>;
+pub type R = crate::R<u8, super::GITEXTRA1>;
 #[doc = "Reader of field `gitextra`"]
 pub type GITEXTRA_R = crate::R<u8, u8>;
 impl R {

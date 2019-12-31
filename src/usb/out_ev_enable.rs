@@ -1,10 +1,10 @@
 #[doc = "Reader of register OUT_EV_ENABLE"]
-pub type R = crate::R<u32, super::OUT_EV_ENABLE>;
+pub type R = crate::R<u8, super::OUT_EV_ENABLE>;
 #[doc = "Writer for register OUT_EV_ENABLE"]
-pub type W = crate::W<u32, super::OUT_EV_ENABLE>;
+pub type W = crate::W<u8, super::OUT_EV_ENABLE>;
 #[doc = "Register OUT_EV_ENABLE `reset()`'s with value 0"]
 impl crate::ResetValue for super::OUT_EV_ENABLE {
-    type Type = u32;
+    type Type = u8;
     #[inline(always)]
     fn reset_value() -> Self::Type {
         0
@@ -30,7 +30,7 @@ impl<'a> OUT_EV_ENABLE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | ((value as u32) & 0x01);
+        self.w.bits = (self.w.bits & !0x01) | ((value as u8) & 0x01);
         self.w
     }
 }

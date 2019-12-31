@@ -1,10 +1,10 @@
 #[doc = "Reader of register ADDR"]
-pub type R = crate::R<u32, super::ADDR>;
+pub type R = crate::R<u8, super::ADDR>;
 #[doc = "Writer for register ADDR"]
-pub type W = crate::W<u32, super::ADDR>;
+pub type W = crate::W<u8, super::ADDR>;
 #[doc = "Register ADDR `reset()`'s with value 0"]
 impl crate::ResetValue for super::ADDR {
-    type Type = u32;
+    type Type = u8;
     #[inline(always)]
     fn reset_value() -> Self::Type {
         0
@@ -20,7 +20,7 @@ impl<'a> ADDR_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x0f) | ((value as u32) & 0x0f);
+        self.w.bits = (self.w.bits & !0x0f) | ((value as u8) & 0x0f);
         self.w
     }
 }

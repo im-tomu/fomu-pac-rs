@@ -1,5 +1,5 @@
 #[doc = "Reader of register MODEL"]
-pub type R = crate::R<u32, super::MODEL>;
+pub type R = crate::R<u8, super::MODEL>;
 #[doc = "Reader of field `model`"]
 pub type MODEL_R = crate::R<u8, u8>;
 impl R {

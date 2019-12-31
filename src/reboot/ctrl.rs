@@ -1,10 +1,10 @@
 #[doc = "Reader of register CTRL"]
-pub type R = crate::R<u32, super::CTRL>;
+pub type R = crate::R<u8, super::CTRL>;
 #[doc = "Writer for register CTRL"]
-pub type W = crate::W<u32, super::CTRL>;
+pub type W = crate::W<u8, super::CTRL>;
 #[doc = "Register CTRL `reset()`'s with value 0"]
 impl crate::ResetValue for super::CTRL {
-    type Type = u32;
+    type Type = u8;
     #[inline(always)]
     fn reset_value() -> Self::Type {
         0
@@ -20,7 +20,7 @@ impl<'a> IMAGE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x03) | ((value as u32) & 0x03);
+        self.w.bits = (self.w.bits & !0x03) | ((value as u8) & 0x03);
         self.w
     }
 }
@@ -34,7 +34,7 @@ impl<'a> KEY_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x3f << 2)) | (((value as u32) & 0x3f) << 2);
+        self.w.bits = (self.w.bits & !(0x3f << 2)) | (((value as u8) & 0x3f) << 2);
         self.w
     }
 }

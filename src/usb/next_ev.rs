@@ -1,5 +1,5 @@
 #[doc = "Reader of register NEXT_EV"]
-pub type R = crate::R<u32, super::NEXT_EV>;
+pub type R = crate::R<u8, super::NEXT_EV>;
 #[doc = "Reader of field `in`"]
 pub type IN_R = crate::R<bool, bool>;
 #[doc = "Reader of field `out`"]

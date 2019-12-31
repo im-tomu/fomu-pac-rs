@@ -1,5 +1,5 @@
 #[doc = "Reader of register BUS_ERRORS2"]
-pub type R = crate::R<u32, super::BUS_ERRORS2>;
+pub type R = crate::R<u8, super::BUS_ERRORS2>;
 #[doc = "Reader of field `bus_errors`"]
 pub type BUS_ERRORS_R = crate::R<u8, u8>;
 impl R {

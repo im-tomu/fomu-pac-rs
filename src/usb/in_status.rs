@@ -1,5 +1,5 @@
 #[doc = "Reader of register IN_STATUS"]
-pub type R = crate::R<u32, super::IN_STATUS>;
+pub type R = crate::R<u8, super::IN_STATUS>;
 #[doc = "Reader of field `idle`"]
 pub type IDLE_R = crate::R<bool, bool>;
 #[doc = "Reader of field `have`"]

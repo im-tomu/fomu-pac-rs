@@ -1,5 +1,5 @@
 #[doc = "Reader of register OUT_STATUS"]
-pub type R = crate::R<u32, super::OUT_STATUS>;
+pub type R = crate::R<u8, super::OUT_STATUS>;
 #[doc = "Reader of field `epno`"]
 pub type EPNO_R = crate::R<u8, u8>;
 #[doc = "Reader of field `have`"]

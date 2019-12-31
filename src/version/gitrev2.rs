@@ -1,5 +1,5 @@
 #[doc = "Reader of register GITREV2"]
-pub type R = crate::R<u32, super::GITREV2>;
+pub type R = crate::R<u8, super::GITREV2>;
 #[doc = "Reader of field `gitrev`"]
 pub type GITREV_R = crate::R<u8, u8>;
 impl R {
