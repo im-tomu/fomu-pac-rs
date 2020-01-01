@@ -1,6 +1,6 @@
 [package]
 name = "fomu-pac"
-version = "0.0.1"
+version = "0.0.2"
 description = "svd2rust generated pac for the fomu"
 license = "Apache-2.0"
 authors = ["David Sawatzke <david-sawatzke@users.noreply.github.com>"]
