@@ -30,7 +30,7 @@ pub struct RegisterBlock {
     _reserved9: [u8; 3usize],
     #[doc = "0x24 - "]
     pub dirty: DIRTY,
-    _reserved10: [u8; 4usize],
+    _reserved10: [u8; 3usize],
     #[doc = "0x28 - "]
     pub model: MODEL,
     _reserved11: [u8; 3usize],

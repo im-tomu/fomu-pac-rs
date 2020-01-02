@@ -3,10 +3,10 @@
 pub struct RegisterBlock {
     #[doc = "0x00 - Output values for pads 1-4"]
     pub o: O,
-    _reserved1: [u8; 4usize],
+    _reserved1: [u8; 3usize],
     #[doc = "0x04 - Output enable control for pads 1-4"]
     pub oe: OE,
-    _reserved2: [u8; 4usize],
+    _reserved2: [u8; 3usize],
     #[doc = "0x08 - Input value for pads 1-4"]
     pub i: I,
 }

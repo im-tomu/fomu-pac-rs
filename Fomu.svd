@@ -21,7 +21,7 @@
                     <name>RESET</name>
                     <addressOffset>0x0000</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>1</size>
+                    <size>8</size>
                     <access>read-write</access>
                     <fields>
                         <field>
@@ -178,7 +178,7 @@
 IO2 and IO3 lines will be hardwired to `1` during bitbang mode.]]></description>
                     <addressOffset>0x0000</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>4</size>
+                    <size>8</size>
                     <access>read-write</access>
                     <fields>
                         <field>
@@ -216,7 +216,7 @@ IO2 and IO3 lines will be hardwired to `1` during bitbang mode.]]></description>
                     <description><![CDATA[Incoming value of MISO signal.]]></description>
                     <addressOffset>0x0004</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>1</size>
+                    <size>8</size>
                     <access>read-only</access>
                     <fields>
                         <field>
@@ -232,7 +232,7 @@ IO2 and IO3 lines will be hardwired to `1` during bitbang mode.]]></description>
                     <description><![CDATA[Write a `1` here to disable memory-mapped mode and enable bitbang mode.]]></description>
                     <addressOffset>0x0008</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>1</size>
+                    <size>8</size>
                     <access>read-write</access>
                     <fields>
                         <field>
@@ -293,7 +293,7 @@ register advances the read pointer automatically.]]></description>
                     <name>STATUS</name>
                     <addressOffset>0x0008</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>2</size>
+                    <size>8</size>
                     <access>read-only</access>
                     <fields>
                         <field>
@@ -461,7 +461,7 @@ this register has no immediate effect -- data isn't written until the ``DAT``
 register is written.]]></description>
                     <addressOffset>0x0004</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>4</size>
+                    <size>8</size>
                     <access>read-write</access>
                     <fields>
                         <field>
@@ -477,7 +477,7 @@ register is written.]]></description>
                     <description><![CDATA[Control logic for the RGB LED and LEDDA hardware PWM LED block.]]></description>
                     <addressOffset>0x0008</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>6</size>
+                    <size>8</size>
                     <access>read-write</access>
                     <fields>
                         <field>
@@ -537,7 +537,7 @@ creating a gentle fading pattern.  However, by setting the appropriate bit in
 ``CTRL``, it is possible to manually control the three individual LEDs.]]></description>
                     <addressOffset>0x000c</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>3</size>
+                    <size>8</size>
                     <access>read-write</access>
                     <fields>
                         <field>
@@ -713,7 +713,7 @@ cycles.]]></description>
 Timer]]></description>
                     <addressOffset>0x0020</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>1</size>
+                    <size>8</size>
                     <access>read-write</access>
                     <fields>
                         <field>
@@ -730,7 +730,7 @@ Timer]]></description>
 current countdown value to `value` register.]]></description>
                     <addressOffset>0x0024</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>1</size>
+                    <size>8</size>
                     <access>read-write</access>
                     <fields>
                         <field>
@@ -809,7 +809,7 @@ current countdown value to `value` register.]]></description>
                     <name>EV_STATUS</name>
                     <addressOffset>0x0038</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>1</size>
+                    <size>8</size>
                     <access>read-write</access>
                     <fields>
                         <field>
@@ -824,7 +824,7 @@ current countdown value to `value` register.]]></description>
                     <name>EV_PENDING</name>
                     <addressOffset>0x003c</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>1</size>
+                    <size>8</size>
                     <access>read-write</access>
                     <fields>
                         <field>
@@ -839,7 +839,7 @@ current countdown value to `value` register.]]></description>
                     <name>EV_ENABLE</name>
                     <addressOffset>0x0040</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>1</size>
+                    <size>8</size>
                     <access>read-write</access>
                     <fields>
                         <field>
@@ -871,7 +871,7 @@ current countdown value to `value` register.]]></description>
                     <description><![CDATA[Output values for pads 1-4]]></description>
                     <addressOffset>0x0000</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>4</size>
+                    <size>8</size>
                     <access>read-write</access>
                     <fields>
                         <field>
@@ -887,7 +887,7 @@ current countdown value to `value` register.]]></description>
                     <description><![CDATA[Output enable control for pads 1-4]]></description>
                     <addressOffset>0x0004</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>4</size>
+                    <size>8</size>
                     <access>read-write</access>
                     <fields>
                         <field>
@@ -903,7 +903,7 @@ current countdown value to `value` register.]]></description>
                     <description><![CDATA[Input value for pads 1-4]]></description>
                     <addressOffset>0x0008</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>4</size>
+                    <size>8</size>
                     <access>read-only</access>
                     <fields>
                         <field>
@@ -930,7 +930,7 @@ current countdown value to `value` register.]]></description>
                     <name>PULLUP_OUT</name>
                     <addressOffset>0x0000</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>1</size>
+                    <size>8</size>
                     <access>read-write</access>
                     <fields>
                         <field>
@@ -948,7 +948,7 @@ on the bus. This value is reset when the host issues a USB Device Reset
 condition.]]></description>
                     <addressOffset>0x0004</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>7</size>
+                    <size>8</size>
                     <access>read-write</access>
                     <fields>
                         <field>
@@ -968,7 +968,7 @@ which event to process first.  Use this register to determine which event needs
 to be processed first. Only one bit will ever be set at a time.]]></description>
                     <addressOffset>0x0008</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>4</size>
+                    <size>8</size>
                     <access>read-only</access>
                     <fields>
                         <field>
@@ -1025,7 +1025,7 @@ automatically.]]></description>
                     <description><![CDATA[Controls for managing how to handle ``SETUP`` transactions.]]></description>
                     <addressOffset>0x0010</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>6</size>
+                    <size>8</size>
                     <access>read-write</access>
                     <fields>
                         <field>
@@ -1086,7 +1086,7 @@ automatically.]]></description>
                     <name>SETUP_EV_STATUS</name>
                     <addressOffset>0x0018</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>2</size>
+                    <size>8</size>
                     <access>read-write</access>
                     <fields>
                         <field>
@@ -1101,7 +1101,7 @@ automatically.]]></description>
                     <name>SETUP_EV_PENDING</name>
                     <addressOffset>0x001c</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>2</size>
+                    <size>8</size>
                     <access>read-write</access>
                     <fields>
                         <field>
@@ -1116,7 +1116,7 @@ automatically.]]></description>
                     <name>SETUP_EV_ENABLE</name>
                     <addressOffset>0x0020</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>2</size>
+                    <size>8</size>
                     <access>read-write</access>
                     <fields>
                         <field>
@@ -1153,7 +1153,7 @@ bytes deep.  If you exceed this amount, the result is undefined.]]></description
 contents of the FIFO.]]></description>
                     <addressOffset>0x0028</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>7</size>
+                    <size>8</size>
                     <access>read-write</access>
                     <fields>
                         <field>
@@ -1185,7 +1185,7 @@ contents of the FIFO.]]></description>
 ``IN_STATUS.HAVE`` should go to ``1``.]]></description>
                     <addressOffset>0x002c</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>6</size>
+                    <size>8</size>
                     <access>read-only</access>
                     <fields>
                         <field>
@@ -1215,7 +1215,7 @@ contents of the FIFO.]]></description>
                     <name>IN_EV_STATUS</name>
                     <addressOffset>0x0030</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>1</size>
+                    <size>8</size>
                     <access>read-write</access>
                     <fields>
                         <field>
@@ -1230,7 +1230,7 @@ contents of the FIFO.]]></description>
                     <name>IN_EV_PENDING</name>
                     <addressOffset>0x0034</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>1</size>
+                    <size>8</size>
                     <access>read-write</access>
                     <fields>
                         <field>
@@ -1245,7 +1245,7 @@ contents of the FIFO.]]></description>
                     <name>IN_EV_ENABLE</name>
                     <addressOffset>0x0038</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>1</size>
+                    <size>8</size>
                     <access>read-write</access>
                     <fields>
                         <field>
@@ -1285,7 +1285,7 @@ Similarly, you can adjust the ``STALL`` state by setting or clearing the
 ``stall`` bit.]]></description>
                     <addressOffset>0x0040</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>7</size>
+                    <size>8</size>
                     <access>read-write</access>
                     <fields>
                         <field>
@@ -1323,7 +1323,7 @@ Similarly, you can adjust the ``STALL`` state by setting or clearing the
                     <description><![CDATA[Status about the current state of the `OUT` endpoint.]]></description>
                     <addressOffset>0x0044</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>6</size>
+                    <size>8</size>
                     <access>read-only</access>
                     <fields>
                         <field>
@@ -1353,7 +1353,7 @@ Similarly, you can adjust the ``STALL`` state by setting or clearing the
                     <name>OUT_EV_STATUS</name>
                     <addressOffset>0x0048</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>1</size>
+                    <size>8</size>
                     <access>read-write</access>
                     <fields>
                         <field>
@@ -1368,7 +1368,7 @@ Similarly, you can adjust the ``STALL`` state by setting or clearing the
                     <name>OUT_EV_PENDING</name>
                     <addressOffset>0x004c</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>1</size>
+                    <size>8</size>
                     <access>read-write</access>
                     <fields>
                         <field>
@@ -1383,7 +1383,7 @@ Similarly, you can adjust the ``STALL`` state by setting or clearing the
                     <name>OUT_EV_ENABLE</name>
                     <addressOffset>0x0050</addressOffset>
                     <resetValue>0x00</resetValue>
-                    <size>1</size>
+                    <size>8</size>
                     <access>read-write</access>
                     <fields>
                         <field>
@@ -1566,7 +1566,7 @@ from has one additional commit beyond the tag indicated in `MAJOR`, `MINOR`, and
                     <name>DIRTY</name>
                     <addressOffset>0x0024</addressOffset>
                     <resetValue>0x01</resetValue>
-                    <size>1</size>
+                    <size>8</size>
                     <access>read-only</access>
                     <fields>
                         <field>

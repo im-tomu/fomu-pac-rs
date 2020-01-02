@@ -3,64 +3,64 @@
 pub struct RegisterBlock {
     #[doc = "0x00 - "]
     pub pullup_out: PULLUP_OUT,
-    _reserved1: [u8; 4usize],
+    _reserved1: [u8; 3usize],
     #[doc = "0x04 - Sets the USB device address, in order to ignore packets going to other devices on the bus. This value is reset when the host issues a USB Device Reset condition."]
     pub address: ADDRESS,
-    _reserved2: [u8; 4usize],
+    _reserved2: [u8; 3usize],
     #[doc = "0x08 - In ``eptri``, there are three endpoints. It is possible for an IRQ to fire and have all three bits set. Under these circumstances it can be difficult to know which event to process first. Use this register to determine which event needs to be processed first. Only one bit will ever be set at a time."]
     pub next_ev: NEXT_EV,
-    _reserved3: [u8; 4usize],
+    _reserved3: [u8; 3usize],
     #[doc = "0x0c - Data from the last ``SETUP`` transactions. It will be 10 bytes long, because it will include the CRC16. This is a FIFO, and the queue is advanced automatically."]
     pub setup_data: SETUP_DATA,
     _reserved4: [u8; 3usize],
     #[doc = "0x10 - Controls for managing how to handle ``SETUP`` transactions."]
     pub setup_ctrl: SETUP_CTRL,
-    _reserved5: [u8; 4usize],
+    _reserved5: [u8; 3usize],
     #[doc = "0x14 - Status about the most recent ``SETUP`` transactions, and the state of the FIFO."]
     pub setup_status: SETUP_STATUS,
     _reserved6: [u8; 3usize],
     #[doc = "0x18 - "]
     pub setup_ev_status: SETUP_EV_STATUS,
-    _reserved7: [u8; 4usize],
+    _reserved7: [u8; 3usize],
     #[doc = "0x1c - "]
     pub setup_ev_pending: SETUP_EV_PENDING,
-    _reserved8: [u8; 4usize],
+    _reserved8: [u8; 3usize],
     #[doc = "0x20 - "]
     pub setup_ev_enable: SETUP_EV_ENABLE,
-    _reserved9: [u8; 4usize],
+    _reserved9: [u8; 3usize],
     #[doc = "0x24 - Each byte written into this register gets added to an outgoing FIFO. Any bytes that are written here will be transmitted in the order in which they were added. The FIFO queue is automatically advanced with each write. The FIFO queue is 64 bytes deep. If you exceed this amount, the result is undefined."]
     pub in_data: IN_DATA,
     _reserved10: [u8; 3usize],
     #[doc = "0x28 - Enables transmission of data in response to ``IN`` tokens, or resets the contents of the FIFO."]
     pub in_ctrl: IN_CTRL,
-    _reserved11: [u8; 4usize],
+    _reserved11: [u8; 3usize],
     #[doc = "0x2c - Status about the IN handler. As soon as you write to `IN_DATA`, ``IN_STATUS.HAVE`` should go to ``1``."]
     pub in_status: IN_STATUS,
-    _reserved12: [u8; 4usize],
+    _reserved12: [u8; 3usize],
     #[doc = "0x30 - "]
     pub in_ev_status: IN_EV_STATUS,
-    _reserved13: [u8; 4usize],
+    _reserved13: [u8; 3usize],
     #[doc = "0x34 - "]
     pub in_ev_pending: IN_EV_PENDING,
-    _reserved14: [u8; 4usize],
+    _reserved14: [u8; 3usize],
     #[doc = "0x38 - "]
     pub in_ev_enable: IN_EV_ENABLE,
-    _reserved15: [u8; 4usize],
+    _reserved15: [u8; 3usize],
     #[doc = "0x3c - Data received from the host will go into a FIFO. This register reflects the contents of the top byte in that FIFO. Reading from this register advances the FIFO pointer."]
     pub out_data: OUT_DATA,
     _reserved16: [u8; 3usize],
     #[doc = "0x40 - Controls for receiving packet data. To enable an endpoint, write its value to ``epno``, with the ``enable`` bit set to ``1`` to enable an endpoint, or ``0`` to disable it. Resetting the OutHandler will set all ``enable`` bits to 0. Similarly, you can adjust the ``STALL`` state by setting or clearing the ``stall`` bit."]
     pub out_ctrl: OUT_CTRL,
-    _reserved17: [u8; 4usize],
+    _reserved17: [u8; 3usize],
     #[doc = "0x44 - Status about the current state of the `OUT` endpoint."]
     pub out_status: OUT_STATUS,
-    _reserved18: [u8; 4usize],
+    _reserved18: [u8; 3usize],
     #[doc = "0x48 - "]
     pub out_ev_status: OUT_EV_STATUS,
-    _reserved19: [u8; 4usize],
+    _reserved19: [u8; 3usize],
     #[doc = "0x4c - "]
     pub out_ev_pending: OUT_EV_PENDING,
-    _reserved20: [u8; 4usize],
+    _reserved20: [u8; 3usize],
     #[doc = "0x50 - "]
     pub out_ev_enable: OUT_EV_ENABLE,
 }

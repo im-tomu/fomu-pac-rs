@@ -3,7 +3,7 @@
 pub struct RegisterBlock {
     #[doc = "0x00 - "]
     pub reset: RESET,
-    _reserved1: [u8; 4usize],
+    _reserved1: [u8; 3usize],
     #[doc = "0x04 - Bits 24-31 of `CTRL_SCRATCH`."]
     pub scratch3: SCRATCH3,
     _reserved2: [u8; 3usize],

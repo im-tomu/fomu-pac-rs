@@ -27,10 +27,10 @@ pub struct RegisterBlock {
     _reserved8: [u8; 3usize],
     #[doc = "0x20 - Enable of the Timer.Set if to 1 to enable/start the Timer and 0 to disable the Timer"]
     pub en: EN,
-    _reserved9: [u8; 4usize],
+    _reserved9: [u8; 3usize],
     #[doc = "0x24 - Update of the current countdown value.A write to this register latches the current countdown value to `value` register."]
     pub update_value: UPDATE_VALUE,
-    _reserved10: [u8; 4usize],
+    _reserved10: [u8; 3usize],
     #[doc = "0x28 - Bits 24-31 of `TIMER0_VALUE`. Latched countdown value"]
     pub value3: VALUE3,
     _reserved11: [u8; 3usize],
@@ -45,10 +45,10 @@ pub struct RegisterBlock {
     _reserved14: [u8; 3usize],
     #[doc = "0x38 - "]
     pub ev_status: EV_STATUS,
-    _reserved15: [u8; 4usize],
+    _reserved15: [u8; 3usize],
     #[doc = "0x3c - "]
     pub ev_pending: EV_PENDING,
-    _reserved16: [u8; 4usize],
+    _reserved16: [u8; 3usize],
     #[doc = "0x40 - "]
     pub ev_enable: EV_ENABLE,
 }

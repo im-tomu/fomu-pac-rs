@@ -3,10 +3,10 @@
 pub struct RegisterBlock {
     #[doc = "0x00 - Bitbang controls for SPI output. Only standard 1x SPI is supported, meaning the IO2 and IO3 lines will be hardwired to `1` during bitbang mode."]
     pub bitbang: BITBANG,
-    _reserved1: [u8; 4usize],
+    _reserved1: [u8; 3usize],
     #[doc = "0x04 - Incoming value of MISO signal."]
     pub miso: MISO,
-    _reserved2: [u8; 4usize],
+    _reserved2: [u8; 3usize],
     #[doc = "0x08 - Write a `1` here to disable memory-mapped mode and enable bitbang mode."]
     pub bitbang_en: BITBANG_EN,
 }

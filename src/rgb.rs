@@ -6,10 +6,10 @@ pub struct RegisterBlock {
     _reserved1: [u8; 3usize],
     #[doc = "0x04 - This register is directly connected to ``SB_LEDDA_IP.ADDR``. This register controls the address that is updated whenever ``DAT`` is written. Writing to this register has no immediate effect -- data isn't written until the ``DAT`` register is written."]
     pub addr: ADDR,
-    _reserved2: [u8; 4usize],
+    _reserved2: [u8; 3usize],
     #[doc = "0x08 - Control logic for the RGB LED and LEDDA hardware PWM LED block."]
     pub ctrl: CTRL,
-    _reserved3: [u8; 4usize],
+    _reserved3: [u8; 3usize],
     #[doc = "0x0c - Normally the hardware ``SB_LEDDA_IP`` block controls the brightness of the LED, creating a gentle fading pattern. However, by setting the appropriate bit in ``CTRL``, it is possible to manually control the three individual LEDs."]
     pub raw: RAW,
 }
