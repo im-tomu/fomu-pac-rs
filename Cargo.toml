@@ -5,7 +5,7 @@ description = "svd2rust generated pac for the fomu"
 license = "Apache-2.0"
 authors = ["David Sawatzke <david-sawatzke@users.noreply.github.com>"]
 edition = "2018"
-repository = "https://github.com/david-sawatzke/fomu-pac"
+repository = "https://github.com/im-tomu/fomu-pac-rs"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
