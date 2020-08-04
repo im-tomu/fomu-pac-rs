@@ -1,6 +1,6 @@
 [package]
 name = "fomu-pac"
-version = "0.0.3"
+version = "0.0.4"
 description = "svd2rust generated pac for the fomu"
 license = "Apache-2.0"
 authors = ["David Sawatzke <david-sawatzke@users.noreply.github.com>"]
@@ -11,12 +11,12 @@ repository = "https://github.com/im-tomu/fomu-pac-rs"
 
 [dependencies]
 bare-metal = "0.2.0"
-vexriscv = "0.0.1"
+riscv = "0.6"
 vcell = "0.1.0"
 
 [dependencies.fomu-rt]
 optional = true
-version = "0.0.3"
+version = "0.0.6"
 
 [features]
 rt = ["fomu-rt"]
